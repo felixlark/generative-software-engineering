@@ -1,0 +1,19 @@
+# Licensing
+
+Generative Software Engineering (GSE) uses two open licenses according to artifact type.
+
+## Apache License 2.0
+
+Software, executable configuration, and agent-skill artifacts in this repository are licensed under the Apache License 2.0 unless a file states otherwise.
+
+The full license text is in [`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt).
+
+## Creative Commons Attribution 4.0 International
+
+Methodology prose, documentation, research material, templates, diagrams, and examples in this repository are licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0) unless a file states otherwise.
+
+The full legal code is in [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt).
+
+When reusing CC BY 4.0 material, attribute **felixlark** and link to the canonical GSE repository:
+
+https://github.com/felixlark/generative-software-engineering

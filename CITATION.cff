@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Generative Software Engineering in research, engineering, or teaching, please cite this repository."
+title: "Generative Software Engineering"
+type: software
+authors:
+  - name: felixlark
+version: 0.1.0
+date-released: 2026-09-10
+repository-code: "https://github.com/felixlark/generative-software-engineering"
+url: "https://github.com/felixlark/generative-software-engineering"
+keywords:
+  - generative software engineering
+  - software engineering
+  - AI agents
+  - coding agents
+  - agentic engineering
