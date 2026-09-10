@@ -1,0 +1,6 @@
+interface:
+  display_name: "Generative Software Engineering"
+  short_description: "端到端持有软件结果，按风险动态协作并用证据闭环"
+  default_prompt: "Use $generative-software-engineering to own this software outcome end to end and close it with evidence."
+policy:
+  allow_implicit_invocation: true
