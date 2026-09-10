@@ -1,5 +1,7 @@
 # Generative Software Engineering
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Generative Software Engineering (GSE)** treats the unit of software work as an owned transformation from intent into a usable, maintainable software entity:
 
 ```text
