@@ -10,8 +10,6 @@ Intent → Executable / Maintainable Software Entity
 
 A root GSE agent owns the outcome end to end: understand the intent, inspect reality, define the result contract, implement, verify, integrate, deliver, and maintain. It may delegate independent work to temporary sub-agents when parallelism, expertise, or independent evaluation has clear value, while retaining responsibility for the final outcome.
 
-> 中文摘要：GSE 把“软件生成”从 `Prompt → Code` 提升为 `Intent → Executable / Maintainable Software Entity`。一个根 Agent 对结果端到端负责；组织结构按任务风险动态生成；完成必须由与风险相称的真实证据证明；工程复杂度只保留当前需求和真实风险所需要的最小充分部分。
-
 ```mermaid
 flowchart LR
     A[Intent] --> B[Root GSE]
@@ -45,6 +43,7 @@ This also changes the role of the engineer. The highest-leverage work increasing
 - **Evidence-driven completion:** [`docs/EVIDENCE.md`](docs/EVIDENCE.md)
 - **Minimal sufficient engineering:** [`docs/MINIMAL_SUFFICIENT_ENGINEERING.md`](docs/MINIMAL_SUFFICIENT_ENGINEERING.md)
 - **Comparative research:** [`research/BENCHMARK_PROTOCOL.md`](research/BENCHMARK_PROTOCOL.md)
+- **Community radar:** [`research/COMMUNITY_RADAR.md`](research/COMMUNITY_RADAR.md)
 - **Worked examples:** [`examples/`](examples/)
 
 ## Why GSE
@@ -80,6 +79,8 @@ GSE therefore centers five ideas:
 - [`templates/`](templates/) — lightweight outcome, handoff, and evidence templates.
 - [`examples/`](examples/) — worked examples.
 - [`research/`](research/) — hypotheses, benchmark protocol, and open research questions.
+- [`research/COMMUNITY_RADAR.md`](research/COMMUNITY_RADAR.md) — recurring scan of emerging GSE ideas and community signals.
+- [`communications/x-launch.md`](communications/x-launch.md) — Chinese and English X launch drafts.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`AGENTS.md`](AGENTS.md) — contribution and agent-working rules for this repository.
 
 The repository name `generative-software-engineering` is an intentional three-segment kebab-name exception for this project. It does not define a general repository naming policy.

@@ -13,3 +13,5 @@ For non-trivial changes, state the intended outcome, invariants, affected surfac
 Keep changes minimally sufficient. Do not add speculative abstractions, compatibility layers, fallback state, tests, or governance for requirements that do not exist or risks that have not been demonstrated.
 
 Research notes are hypotheses until promoted into the normative docs. Benchmarks must preserve task input, baseline, runtime/model configuration, tool access, evidence, and total participant cost well enough to compare alternatives fairly.
+
+For GitHub README and public posts, follow the [communication language and publication receipt requirements](CONTRIBUTING.md#public-communication-languages).
