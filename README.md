@@ -23,6 +23,20 @@ flowchart LR
 
 GSE is proposed and maintained by **@felixlark** as an open research and engineering methodology.
 
+## The abstraction shift: from coding to outcome engineering
+
+As coding agents make implementation increasingly cheap, the scarce engineering work moves upstream. The important questions become: **What is the goal? What constraints define the solution space? What evidence proves success? Who owns the result when the generated code is incomplete, inconsistent, or wrong?**
+
+GSE treats code generation as one tactic inside a larger engineering loop. Code matters, but `Prompt → Code` is too small a unit of responsibility for real software work. The durable responsibility is the transformation from intent to a software entity that actually works, can be maintained, and has enough evidence to justify the claim that it is done.
+
+| Abstraction | Primary unit | Typical stopping point | GSE view |
+| --- | --- | --- | --- |
+| Manual coding | Code | “I implemented it.” | Implementation is only one part of the outcome. |
+| AI code generation | Prompt → Code | “The model generated a patch.” | Generation does not prove delivery. |
+| Generative Software Engineering | Intent → Software Entity | Evidence-backed usable outcome | Goal, constraints, execution, verification, integration, and responsibility form one loop. |
+
+This also changes the role of the engineer. The highest-leverage work increasingly lies in **goal definition, system design, decomposition, tool and environment design, verification, and accountability**. GSE makes that shift explicit and turns it into an engineering method rather than leaving it as an informal style of “managing coding agents.”
+
 ## Start here
 
 - **Definition and invariants:** [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)
