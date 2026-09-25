@@ -1,6 +1,6 @@
 ---
 name: generative-software-engineering
-description: Apply Generative Software Engineering (GSE) to non-trivial software implementation, debugging, refactoring, integration, migration, and delivery work where Codex owns a software outcome end to end. Use for repository tasks that span inspection, code, verification, integration, or release; skip pure Q&A and trivial text-only edits.
+description: Apply Generative Software Engineering (GSE) to non-trivial software implementation, debugging, integration, continuous delivery, and release work where Codex owns a software outcome end to end; skip pure Q&A and trivial text-only edits.
 metadata:
   short-description: End-to-end software outcome ownership with evidence
 ---
@@ -70,5 +70,17 @@ Use an independent evaluator when material risk, subjectivity, or self-verificat
 Across compaction, handoff, or long-running work, preserve the original outcome, accepted scope, completed work, active assumptions, stable identifiers, important tool outcomes, unresolved blockers, and next concrete goal. A checkpoint is not a reason to stop while safe in-scope work remains.
 
 Close only when the accepted outcome is complete with refreshed evidence, a verified blocker requires an explicit external action, or the user changes/stops the scope.
+
+## Keep increments moving to users
+
+At intake, name the observable delivery target for this change: an integrated preview, an internal build, a distributed release, or a specific user acceptance result. Choose it from the user's request and the product's actual channel; do not silently expand every issue into a whole-product release or shrink a promised release into a code commit. Keep code, integration, preview, distribution, and user acceptance as separate evidence states.
+
+When work shares a writer, build slot, device, or release channel, limit implementation WIP to that capacity. Pull the nearest deliverable change through a small, reviewable integration and its matching fast feedback surface before starting another overlapping implementation. Release trains may bundle several integrated changes, but each change retains its source owner, candidate identity, and promised completion target. A queued release is `ready_for_release`, not evidence of release or an external blocker.
+
+A busy teammate, test device, or build slot is a scheduling dependency. Record who owns it, the next action, and the event that makes the task runnable; release the resources this task no longer needs. Do not mark a feature `blocked` merely because another owner is validating a candidate. Continue independent in-scope work or hand off the ready artifact to the explicitly owned integration/release lane. If the promised outcome includes distribution or user acceptance, keep that obligation open until its receipt arrives.
+
+An agent turn cannot continue itself after it ends. If work must resume on a future event, use an actual supported continuation mechanism with the original task identity and authorization; verify that it ran. A status note, active Goal, queued job, or skill instruction alone cannot wake an agent or close an issue. When no such mechanism exists, report the exact pending gate and owner without claiming completion.
+
+For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). Do not create an automation from ordinary software work.
 
 The maintained GSE specification and research material live at https://github.com/longbiaochen/generative-software-engineering.
