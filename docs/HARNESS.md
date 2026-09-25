@@ -25,3 +25,13 @@ Use model reasoning for ambiguous intent, planning, diagnosis, tradeoffs, and in
 ## Harness evaluation
 
 A harness should be evaluated by whether it helps a root GSE complete real outcomes with lower failure, coordination, and recovery cost. Feature count alone is not a useful measure.
+
+## Durable delivery operations
+
+Represent independently executable operations with original source identity and generation, accountable owner, contract and authorization references, candidate and input identities, dependencies, resource demands, and next action. The source system remains authoritative for the requirement and closure; the execution journal records attempts and evidence references.
+
+Persist dispatch intent before sending, correlate acknowledgements with exact request identity, and reconcile uncertain results before retrying. Resource observations have bounded validity, and scheduling reservations do not replace physical locks. Release resources while waiting for human decisions. Preserve fairness under contention and bound concurrent work by actual execution capacity. Evidence invalidation affects dependent claims and operations, without silently replaying uncertain external effects.
+
+Resource events drive useful work; periodic reconciliation repairs missed events and interrupted processes. Verify both queue admission and actual consumption by an idle original owner. Report separately when a continuation is registered, dispatched, acknowledged, and completed. A successful test against an already running recipient does not prove that an idle task can be resumed.
+
+Explicit full-scope implementation requests should be organized across the complete dependency graph. Independent work may proceed concurrently; correctness checks and component tests remain necessary, but a single-interface pilot is not an additional permission gate.

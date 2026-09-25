@@ -20,7 +20,7 @@ Before a non-trivial change becomes implementation work, record enough of the fo
 - `affected_surface`: code, data, runtime, UI, integration, or operational surfaces touched.
 - `completion_evidence`: observations required to justify closure.
 
-For delivery work, also state the **observable target channel** at intake: integrated preview, internal build, distributed release, or a particular user acceptance result. Choose the smallest target that fulfills the actual request. A request for a released feature includes the release; an ordinary bug fix does not inherit every outstanding product release gate. Changing this target later requires an explicit user decision or a newly observed requirement, not a convenient reinterpretation of a blocked task.
+For delivery work, also state the **observable target channel** at intake: integrated preview, internal build, distributed release, or a particular user acceptance result. Choose the smallest target that fulfills the actual request. Every source uses the same responsibility model. Derive required gates from the affected surfaces and the accepted outcome; feature, bug, feedback, and release labels do not add or remove gates. Changing this target later requires an explicit user decision or a newly observed requirement, not a convenient reinterpretation of a blocked task.
 
 Use [`../templates/outcome-contract.md`](../templates/outcome-contract.md) when a persistent record helps.
 
@@ -71,3 +71,9 @@ Close the task only when one of these conditions holds:
 3. the owner of the intent changes or stops the scope.
 
 Maintenance feeds observed failures, user feedback, and research findings back into the smallest change that improves the software entity or the method.
+
+## Candidate and release identity
+
+A source commit identifies code. Each new installable candidate has a platform build identity and immutable artifact digests. A user-facing product version identifies a release batch; individual edits need not change that version. Use patch increments for compatible fixes, minor increments for compatible feature additions, and major increments for product-defined incompatible changes. Projects own their initial version and concrete batching thresholds.
+
+Mac, mobile, and other platforms share the lifecycle and release inclusion contract while using their actual verification and distribution channels. A simulator artifact and a signed device archive require distinct identities and applicable evidence even when built from the same source. Batch on a bounded age or count threshold, allow urgent work to advance, and freeze inclusion so incoming changes cannot postpone ready work indefinitely. Triggering a batch schedules publication work; only a real channel receipt proves delivery.
