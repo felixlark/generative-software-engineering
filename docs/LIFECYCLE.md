@@ -58,6 +58,8 @@ Keep implementation and distribution distinct without losing ownership:
 
 These are evidence states, not a mandatory sequence for every change. A product may combine stages or omit a channel that the outcome does not require. One release may carry several changes; each retains its original owner and promised target. The release lane owns the shared publication operation, while the root owner remains responsible for resolving any unmet promise on its source task. Never close an issue merely because it entered a release queue.
 
+Integration is part of reaching the promised outcome. Do not require the source task to be in a successful terminal state before its owned, verified patch can be integrated; that makes integration and closure depend on each other. Admit a patch using its provenance, exact diff, baseline, and relevant focused checks, then verify the integrated candidate on the target feedback surface before closing the task at its agreed delivery target.
+
 If a shared writer, environment, or tester is busy, record the current owner, the exact next gate, and the event that will make the work runnable. Use a supported event or scheduler continuation to resume the original task when needed. An active status, a completed agent turn, or a document saying “continue” cannot execute a future action. If no continuation mechanism exists, expose that operating gap explicitly instead of marking the work complete or falsely blocked.
 
 ## Closure
