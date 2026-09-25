@@ -14,6 +14,8 @@ A capable harness may provide:
 - logs, test results, screenshots, runtime observations, and other evidence;
 - compaction and handoff support.
 
+For delivery to continue across agent turns, the harness also needs an executable wake path: observe a meaningful event (for example a commit, test result, resource release, or deployment receipt), resume the original task or its owned release lane, and read back the resulting state. A skill or active status is instruction and metadata; neither schedules execution by itself. The runtime must preserve idempotency and permission boundaries when retrying uncertain publication actions.
+
 GSE semantics must not depend on a particular model name, context-window size, UI, orchestration API, or vendor-specific role structure. Runtime capabilities can improve how the lifecycle is executed without changing who owns the outcome or what constitutes adequate evidence.
 
 ## Deterministic state and semantic judgment
