@@ -86,3 +86,9 @@ An agent turn cannot continue itself after it ends. If work must resume on a fut
 For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). Do not create an automation from ordinary software work.
 
 The maintained GSE specification and research material live at https://github.com/longbiaochen/generative-software-engineering.
+
+## Use durable delivery infrastructure
+
+When the project provides a delivery graph, register the next executable operations with original source/generation/owner, contract and authorization references, candidate, dependencies, resource needs, and evidence. Use its supported continuation and exact attempt receipts; do not start another polling loop for each task. Confirm an idle recipient actually resumes before promising automatic recovery. Queued, acknowledged, and completed are different states.
+
+Follow the maintained method's `docs/HARNESS.md` for runtime boundaries and `docs/LIFECYCLE.md` for candidate, release, and source closure semantics. Keep product-specific commands and batching thresholds in the project's skill or runbook. When the user authorizes a complete mechanism, organize the entire scope by dependencies and execute independent work concurrently within real capacity; do not require a pilot as permission to continue.
