@@ -36,6 +36,12 @@ Resource events drive useful work; periodic reconciliation repairs missed events
 
 Explicit full-scope implementation requests should be organized across the complete dependency graph. Independent work may proceed concurrently; correctness checks and component tests remain necessary, but a single-interface pilot is not an additional permission gate.
 
+### Source discovery
+
+An unchanged operation journal does not establish that no new requirement arrived. Before a project-wide reconciler exits on an unchanged queue or digest, it must also reconcile a supported source event cursor or a bounded source discovery pass. Compare stable source identities and meaningful revisions with existing references; inspect only new, changed, or unresolved sources. Preserve the original owner and accepted scope: discovering a discussion request does not authorize implementation. Record intake references in the existing coordination surface, not a second requirement database.
+
+State the coverage boundary, pagination result and observation time. Failed discovery is unknown coverage, not an empty result; retain an engineering recovery action and backoff without replaying work. A canonical-directory listing cannot establish coverage of other hosts, historical directories or projectless sources. Known additional entry points need their own supported observation. Validate discovery with a requirement that arrives while the operation graph is unchanged, including a discussion-only source that must not be dispatched as implementation.
+
 ## Execution recovery ownership
 
 Routine development recovery belongs to the engineering system. Do not make a user's click to resume a goal, resend a requirement, release a writer, or resolve a code conflict the sole continuation path. Users participate in product decisions and acceptance; identity verification, new authorization, explicit pauses, and budget limits retain their actual boundaries.
