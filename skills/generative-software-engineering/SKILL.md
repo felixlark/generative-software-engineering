@@ -83,6 +83,8 @@ A busy teammate, test device, or build slot is a scheduling dependency. Record w
 
 An agent turn cannot continue itself after it ends. If work must resume on a future event, use an actual supported continuation mechanism with the original task identity and authorization; verify that it ran. A status note, active Goal, queued job, or skill instruction alone cannot wake an agent or close an issue. When no such mechanism exists, report the exact pending gate and owner without claiming completion.
 
+Treat routine execution recovery as engineering work. Do not make the user click Resume Goal, resend the requirement, manage locks, or resolve development conflicts to keep delivery moving. Diagnose the actual executor and pending operation, use supported recovery within the existing authority, and verify consumption and useful progress. Preserve explicit pauses, budget controls, authentication and approval boundaries. A stale goal label or timeout does not authorize duplicate work or takeover of an uncertain writer. Follow `docs/HARNESS.md` in the maintained GSE repository for recovery ownership and fencing; keep repair responsibility with the engineering owner when an interface is unavailable.
+
 For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). Do not create an automation from ordinary software work.
 
 The maintained GSE specification and research material live at https://github.com/longbiaochen/generative-software-engineering.

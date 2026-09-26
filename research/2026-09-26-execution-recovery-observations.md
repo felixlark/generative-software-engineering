@@ -23,3 +23,28 @@ Executor takeover remains a design requiring actual write-boundary fencing and s
 [OpenAI Codex App Server](https://developers.openai.com/codex/app-server), retrieved 2026-09-26: distinguishes thread resume, turn start/steer, completion notifications, and goal read operations; recommends the SDK for automated jobs. Interface documentation does not prove deployment-specific takeover safety.
 
 Private raw receipts are retained in the product's local delivery evidence directory. Any research artifact release requires a separate sanitized package and authorization. No paper submission, patent filing, or public disclosure occurred in this revision.
+
+## Subsequent capacity recovery and delivery observations
+
+A different idle original owner had no persisted goal and failed a fresh turn with an explicit model-capacity error. The coordinator used the supported desktop messaging interface with a task-local alternative model, retained the existing queued operation and activation fence, and observed its exact acknowledgement. The original owner then returned a hashed result receipt and resolved the read-only operation successfully. This establishes consumption and useful completion of that operation without a user resume action; it does not establish the simulator feature's acceptance or source closure. The blocked-goal owners described above still lack equivalent consumption evidence. This is one observed recovery, not a reliability estimate or proof that every stall shares this cause.
+
+Two further delivery defects were corrected: a logical writer permit remained held after physical writer release while the same operation continued testing; and a prebuilt installer required its frozen candidate to equal the advancing mainline HEAD. The first now supports an owner-checked, receipt-bound stage release for acknowledged attempts. The second permits a frozen candidate that is an ancestor of mainline while rejecting downgrade or divergent ancestry relative to the installed candidate. Neither change removes physical locking, candidate integrity, or acceptance requirements.
+
+A subsequent signed Mac build was installed, its provenance and new read-only source-inspection command were verified, and official native interaction navigated from the research board to the development board and selected the product project. The runtime resource check passed. This bounded installation smoke is not acceptance of every bundled feature. Separate iOS tests and actual simulator journeys retain their own candidates and obligations.
+
+### Evaluation implications
+
+Record the following separately, including failed and unresolved cases:
+
+| Measure | Evidence needed |
+| --- | --- |
+| Engineering user interventions | Count actual user control-plane actions; keep product acceptance and identity verification separate |
+| Recovery latency | Failure observation to exact consumption, and consumption to useful result |
+| Outcome latency | Original intake to required source closure; unresolved cases remain censored |
+| Coordination cost | All owner/coordinator/model tokens, tool calls, failed attempts and wall time |
+| Effective throughput | Accepted requirements per elapsed time and resource budget, not messages or commits |
+| Safety | Duplicate side effects, conflicting writers, stale candidate evidence and incorrect closure |
+
+No aggregate cost or performance claim is justified by these observations. Reproducible evaluation should compare passive status reporting, timer-driven reconciliation, and event-driven reconciliation under the same task set and capacity, with controlled dropped events, capacity failures, stale blockers, late executors and candidate advancement. The current human/agent coordinator still performs diagnosis and task-local model selection; autonomous policy selection and safe arbitrary executor takeover remain unimplemented.
+
+The official App Server documentation was fetched again on 2026-09-26. It states that thread resume alone does not update the thread timestamp, read does not load the thread, turns emit error/completion events, and model changes can be applied on resume. These distinctions support the observation model, but do not override deployment-specific tool permissions or prove desktop ownership from an independent App Server.
