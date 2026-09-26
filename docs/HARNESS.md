@@ -35,3 +35,13 @@ Persist dispatch intent before sending, correlate acknowledgements with exact re
 Resource events drive useful work; periodic reconciliation repairs missed events and interrupted processes. Verify both queue admission and actual consumption by an idle original owner. Report separately when a continuation is registered, dispatched, acknowledged, and completed. A successful test against an already running recipient does not prove that an idle task can be resumed.
 
 Explicit full-scope implementation requests should be organized across the complete dependency graph. Independent work may proceed concurrently; correctness checks and component tests remain necessary, but a single-interface pilot is not an additional permission gate.
+
+## Execution recovery ownership
+
+Routine development recovery belongs to the engineering system. Do not make a user's click to resume a goal, resend a requirement, release a writer, or resolve a code conflict the sole continuation path. Users participate in product decisions and acceptance; identity verification, new authorization, explicit pauses, and budget limits retain their actual boundaries.
+
+Separate persistent outcome responsibility from an execution session. A goal status, queued message, running-turn indicator, and delivered outcome are different observations. First repair or continue through the supported original execution interface. Independent read-only verification can advance while that interface is unavailable.
+
+Changing executors requires evidence that the old executor has stopped or is effectively fenced at every relevant write boundary, plus preserved source/generation, candidate, authorization, unresolved attempts, and ownership. A journal lease alone does not fence a late process. Timeouts and unavailable sessions do not justify replaying uncertain writes or publications. New sessions must not bypass user pauses, approvals, budget controls, or tool restrictions.
+
+Measure useful recovery by exact consumption, state-changing progress, and eventual outcome closure. State liveness assumptions explicitly: available runtime capacity, supported control interfaces, sufficient authority, and reachable dependencies. When these assumptions fail, the coordinator owns diagnosis and repair rather than silently delegating routine control-plane maintenance to the user.
