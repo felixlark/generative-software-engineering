@@ -47,7 +47,7 @@ Choose the smallest sufficient implementation. Add abstractions, compatibility p
 
 Create sub-agents only when independent work, specialist judgment, independent evaluation, or parallel execution has enough expected value to repay coordination and integration cost. Keep tightly coupled work and shared mutable state with one owner.
 
-For concurrent writers, give each writer an isolated checkout/branch or equivalent exclusive write scope with a known baseline. The root agent integrates every candidate and remains responsible for the final result.
+Treat each checkout and its Git state as one write scope. Concurrent writers need isolated checkouts or equivalent exclusive scopes with known baselines; a project's stricter repository rules take precedence. If the project requires source and Git writes in one canonical `main` checkout, serialize those writes and keep parallel work read-only. The root agent integrates every candidate and remains responsible for the final result. See the maintained method's `docs/COLLABORATION.md` for resource ownership.
 
 GSE has no mandatory product/engineering/testing/operations pipeline and no fixed number of agents or review stages.
 
@@ -75,7 +75,7 @@ Close only when the accepted outcome is complete with refreshed evidence, a veri
 
 At intake, name the observable delivery target for this change: an integrated preview, an internal build, a distributed release, or a specific user acceptance result. Choose it from the user's request and the product's actual channel; do not silently expand every issue into a whole-product release or shrink a promised release into a code commit. Keep code, integration, preview, distribution, and user acceptance as separate evidence states.
 
-When work shares a writer, build slot, device, or release channel, limit implementation WIP to that capacity. Pull the nearest deliverable change through a small, reviewable integration and its matching fast feedback surface before starting another overlapping implementation. Release trains may bundle several integrated changes, but each change retains its source owner, candidate identity, and promised completion target. A queued release is `ready_for_release`, not evidence of release or an external blocker.
+When work shares a writer, build slot, installation target, desktop, device, or release channel, assign one operator to that resource at a time and limit implementation WIP to its capacity. Pull the nearest deliverable change through a small, reviewable integration and its matching fast feedback surface before starting another overlapping implementation. Release trains may bundle several integrated changes, but each change retains its source owner, candidate identity, and promised completion target. A queued release is `ready_for_release`, not evidence of release or an external blocker.
 
 An owned patch may enter integration while its source task remains open; requiring the task to close before integration creates a circular gate when integration is part of completion. Check provenance, diff, baseline, and focused evidence before integrating, then close against the promised observable target.
 
