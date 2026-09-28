@@ -22,6 +22,20 @@ flowchart LR
 
 GSE 由 **Longbiao CHEN（龙彪）**提出和维护，是一项开放的研究与工程方法。
 
+## 抽象层次的变化：从编码到结果工程
+
+随着编码 Agent 降低实现成本，稀缺的工程工作逐渐向上游移动。关键问题变成：**目标是什么？哪些约束界定了解空间？什么证据能证明成功？当生成的代码不完整、不一致或出错时，谁对结果负责？**
+
+GSE 把代码生成看作完整工程循环中的一种手段。代码仍然重要，但对于真实软件工作，`Prompt → Code` 所定义的责任范围过小。持久的责任是把意图转化为实际可用、可维护的软件实体，并提供足以支持完成结论的证据。
+
+| 抽象层次 | 基本单位 | 常见停止点 | GSE 的视角 |
+| --- | --- | --- | --- |
+| 人工编码 | 代码 | “我已经实现了。” | 实现只是结果的一部分。 |
+| AI 代码生成 | 提示词 → 代码 | “模型已经生成补丁。” | 生成不能证明交付。 |
+| 生成式软件工程 | 意图 → 软件实体 | 由证据支持的可用结果 | 目标、约束、执行、验证、集成与责任组成完整循环。 |
+
+这也改变了工程师的角色。高价值工作越来越集中在**目标定义、系统设计、任务分解、工具与环境设计、验证，以及结果责任**。GSE 明确这一变化，将其转化为工程方法，而不只是一种非正式的“管理编码 Agent”的工作方式。
+
 ## 从这里开始
 
 - **定义与不变量：**[`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)
@@ -30,7 +44,19 @@ GSE 由 **Longbiao CHEN（龙彪）**提出和维护，是一项开放的研究�
 - **由证据支持的完成判定：**[`docs/EVIDENCE.md`](docs/EVIDENCE.md)
 - **最小充分工程：**[`docs/MINIMAL_SUFFICIENT_ENGINEERING.md`](docs/MINIMAL_SUFFICIENT_ENGINEERING.md)
 - **对比研究：**[`research/BENCHMARK_PROTOCOL.md`](research/BENCHMARK_PROTOCOL.md)
+- **研究中心与每周雷达：**[`research/README.md`](research/README.md)
 - **完整示例：**[`examples/`](examples/)
+
+## 选择学习路径
+
+| 你的目标 | 阅读与实践 | 具体产出 |
+| --- | --- | --- |
+| 理解 GSE | 阅读[规范](docs/SPECIFICATION.md)，再看[设置保存缺陷示例](examples/bug-fix.md)。 | 解释为什么持久化测试通过还不能证明重启流程正确。 |
+| 应用于实际任务 | 填写[结果契约](templates/outcome-contract.md)，再用[证据记录](templates/evidence-record.md)对应各项主张。 | 可供审查的范围，以及关闭任务所需的证据。 |
+| 比较 Agent 组织方式 | 从[基准协议](research/BENCHMARK_PROTOCOL.md)和[每周研究笔记](research/README.md)开始。 | 输入受控、局限明确、记录全部参与者成本的比较。 |
+| 贡献证据 | 阅读[贡献指南](CONTRIBUTING.md)与[开放问题](research/QUESTIONS.md)。 | 可复现的观察或反例，并附有日期的一手来源。 |
+
+现有示例是解释性演练，不是可执行教程。[2026-09-28 雷达](research/2026-09-28-community-radar.md)讨论 Agent 扩展、成本证据与当前主张的边界。如果这些路径对你的工作有帮助，欢迎 star 仓库以便再次查阅，并贡献能够改进方法的证据。
 
 ## 为什么提出 GSE
 
@@ -65,6 +91,7 @@ GSE 由 **Longbiao CHEN（龙彪）**提出和维护，是一项开放的研究�
 - [`templates/`](templates/)——轻量的结果、交接与证据模板。
 - [`examples/`](examples/)——完整示例。
 - [`research/`](research/)——研究假设、基准测试协议与开放研究问题。
+- [`research/README.md`](research/README.md)——研究中心、按日期归档的社区扫描与尚待补充的证据。
 - [`communications/x-launch.md`](communications/x-launch.md)——X 平台的中英文发布草稿。
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) 与 [`AGENTS.md`](AGENTS.md)——本仓库的贡献指南与 Agent 工作规则。
 

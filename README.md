@@ -43,8 +43,19 @@ This also changes the role of the engineer. The highest-leverage work increasing
 - **Evidence-driven completion:** [`docs/EVIDENCE.md`](docs/EVIDENCE.md)
 - **Minimal sufficient engineering:** [`docs/MINIMAL_SUFFICIENT_ENGINEERING.md`](docs/MINIMAL_SUFFICIENT_ENGINEERING.md)
 - **Comparative research:** [`research/BENCHMARK_PROTOCOL.md`](research/BENCHMARK_PROTOCOL.md)
-- **Community radar:** [`research/COMMUNITY_RADAR.md`](research/COMMUNITY_RADAR.md)
+- **Research hub and weekly radar:** [`research/README.md`](research/README.md)
 - **Worked examples:** [`examples/`](examples/)
+
+## Choose a learning path
+
+| Your goal | Read and try | Concrete output |
+| --- | --- | --- |
+| Understand GSE | Read the [specification](docs/SPECIFICATION.md), then the [settings bug example](examples/bug-fix.md). | Explain why a passing persistence test alone does not prove the restart path. |
+| Apply it to a task | Fill in the [outcome contract](templates/outcome-contract.md), then map claims with the [evidence record](templates/evidence-record.md). | A reviewable scope and the evidence needed to close your task. |
+| Compare agent organizations | Start with the [benchmark protocol](research/BENCHMARK_PROTOCOL.md) and [weekly research notes](research/README.md). | A comparison with controlled inputs, explicit limitations, and total participant cost. |
+| Contribute evidence | Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [open questions](research/QUESTIONS.md). | A reproducible observation or counterexample, with a dated primary source. |
+
+The examples are explanatory walkthroughs, not executable tutorials. The [2026-09-28 radar](research/2026-09-28-community-radar.md) examines agent scaling, cost evidence, and the limits of current claims. If these paths help your work, star the repository to find it again and contribute evidence that improves the method.
 
 ## Why GSE
 
@@ -79,7 +90,7 @@ GSE therefore centers five ideas:
 - [`templates/`](templates/) — lightweight outcome, handoff, and evidence templates.
 - [`examples/`](examples/) — worked examples.
 - [`research/`](research/) — hypotheses, benchmark protocol, and open research questions.
-- [`research/COMMUNITY_RADAR.md`](research/COMMUNITY_RADAR.md) — recurring scan of emerging GSE ideas and community signals.
+- [`research/README.md`](research/README.md) — research hub, dated community scans, and open evidence gaps.
 - [`communications/x-launch.md`](communications/x-launch.md) — Chinese and English X launch drafts.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`AGENTS.md`](AGENTS.md) — contribution and agent-working rules for this repository.
 
