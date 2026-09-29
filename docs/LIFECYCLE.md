@@ -42,6 +42,8 @@ A long-running task must remain recoverable without replaying the full conversat
 - `unresolved_blockers`
 - `next_concrete_goal`
 
+When finalizing a design after lossy compaction, use summaries as retrieval aids and verify consequential choices against original user messages and actual question responses. A submitted question, preselected recommendation, or delivery acknowledgement is not an answer. Preserve source identifiers, apply explicit corrections and later replacements in order, and distinguish confirmed requirements, engineering defaults, unresolved capability checks, and implementation evidence. If the original source cannot be recovered, disclose the unverified decision instead of inventing confirmation. Update each rule in its owning document and synchronize affected design, tests, operations, and skill entrypoints; keep superseded requirements out of active specifications.
+
 A context boundary, sub-goal completion, or passing test is a checkpoint. It is not a reason to stop while safe in-scope work remains.
 
 ## Continuous delivery states

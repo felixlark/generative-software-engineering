@@ -67,7 +67,7 @@ Use an independent evaluator when material risk, subjectivity, or self-verificat
 
 ## Preserve recoverability
 
-Across compaction, handoff, or long-running work, preserve the original outcome, accepted scope, completed work, active assumptions, stable identifiers, important tool outcomes, unresolved blockers, and next concrete goal. A checkpoint is not a reason to stop while safe in-scope work remains.
+Across compaction, handoff, or long-running work, preserve the original outcome, accepted scope, completed work, active assumptions, stable identifiers, important tool outcomes, unresolved blockers, and next concrete goal. A checkpoint is not a reason to stop while safe in-scope work remains. When a design depends on a long or compacted discussion, verify consequential decisions against original user messages and actual question answers, not just a summary or recommended option. Separate confirmed requirements, engineering defaults, and unverified capabilities; follow the decision-recovery contract in the maintained method’s `docs/LIFECYCLE.md`.
 
 Close only when the accepted outcome is complete with refreshed evidence, a verified blocker requires an explicit external action, or the user changes/stops the scope.
 
