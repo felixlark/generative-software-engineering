@@ -43,5 +43,11 @@ Preserve consequential user decisions and unresolved work across handoffs or con
 
 ## Conditional references
 
+- 修改接口、协议、持久化、共享状态或跨组件行为时，读 [修改影响与设计取舍](references/change-design.md)：验证支撑安全性的关键事实；有实质架构取舍才比较候选，不以跨函数为触发器。
+- 高风险变更、争议设计或明确要求独立审查时，读 [独立审查](references/independent-review.md)。审查者隔离实现结论，主 Agent 以证据裁决；普通小修不自动增加角色。
+- 项目验收入口反复摸索或有多个用户入口时，读 [项目验收地图](references/project-verification.md)，复用项目控制面并记录逐项覆盖；地图存在不等于已验收。
+- 同类工程错误重复发生时，读 [重复错误治理](references/repeated-errors.md)，优先用结构和可执行约束拦截，不把每次纠正都追加为全局规则。
+- 依据性能数字选型、优化或报告回归时，读 [性能结论核验](references/performance-evidence.md)，核对实际工作、正确性、测量条件和端到端影响。
+- 以上方法是按风险选用的工程操作，不构成另一条固定流水线；常规局部修复继续由当前 Agent 完成相称验证。参考来源和适配边界见 [来源说明](references/method-sources.md)。
 - For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). A scheduled check is continuation, not delivery evidence.
 - For methodology design or deeper engineering questions, consult the maintained [specification](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/SPECIFICATION.md) and its linked owning documents. Product commands and operational details belong in the project's rules and runbooks.
