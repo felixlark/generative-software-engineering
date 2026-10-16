@@ -2,7 +2,7 @@
 
 This repository develops the Generative Software Engineering method itself. Keep it product-agnostic and evidence-driven.
 
-Before editing, inspect the current git status and preserve unrelated work. One writer owns a checkout/branch; concurrent writers use isolated worktrees or equivalent write isolation.
+Before editing, inspect the current git status and preserve unrelated work. One writer owns the canonical checkout; concurrent work stays read-only and repository writes serialize. Do not create new worktrees or clean pre-existing residue without a separate exact user request. Generated development output follows the host's workspace instructions and stays outside `~/Documents`.
 
 Treat [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md) as the normative method. Lifecycle, collaboration, evidence, minimal-engineering, and harness details each have one owning document linked from [`docs/README.md`](docs/README.md). Do not duplicate the same rule across files; link to its owner.
 
