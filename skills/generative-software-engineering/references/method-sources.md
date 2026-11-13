@@ -15,3 +15,7 @@
 适配保留风险驱动、单 owner、关键事实证明、独立证据判断和可复用验收；不移植 Cursor 的 Task／模型 slug／loop／alwaysApply 配置，也不引入强制委派、自动外发、worktree 或 PR 流水线。多模型共识不作为事实证明，注释和兼容层按实际合同保留；运行和发布走项目已授权控制面。
 
 模型与推理强度沿用当前用户／任务设置，本套方法不维护第二份型号表。每次实际改动只加载所需参考，不要求读取上游全文或整套原则。
+
+## 内置 EGM
+
+[内置 EGM](egm-review.md)适配 Google 的 [Elephant & Goldfish Model](https://github.com/google/elephant-goldfish-model)，参考本机已安装 EGM 0.1.2 的独立新读者、候选评审和裁决修订方法。保留 Copyright 2026 Google LLC 及 [Apache-2.0 许可](../LICENSE.egm)。该 GSE 适配由 GSE 维护；原插件显式调用的交互合同仍归原插件，模型、宿主授权和平台检查不由本方法覆盖。
