@@ -43,6 +43,8 @@ Preserve consequential user decisions and unresolved work across handoffs or con
 
 ## Conditional references
 
+- 创建或实质修改可执行方案、架构或高影响操作流程时，按[内置 EGM](references/egm-review.md)独立审视、裁决与定向复审；明确小修直接实施并验证。复用同候选、环境和范围的有效证据，不因技能入口重复开评审。
+
 - 修改接口、协议、持久化、共享状态或跨组件行为时，读 [修改影响与设计取舍](references/change-design.md)：验证支撑安全性的关键事实；有实质架构取舍才比较候选，不以跨函数为触发器。
 - 高风险变更、争议设计或明确要求独立审查时，读 [独立审查](references/independent-review.md)。审查者隔离实现结论，主 Agent 以证据裁决；普通小修不自动增加角色。
 - 项目验收入口反复摸索或有多个用户入口时，读 [项目验收地图](references/project-verification.md)，复用项目控制面并记录逐项覆盖；地图存在不等于已验收。

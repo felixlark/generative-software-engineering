@@ -28,8 +28,8 @@ For GitHub README and public posts, follow the [communication language and publi
 
 ## 合并前评审
 
-合并前须等待 Codex 自动评审完成，且评审意见已全部处理清零（无未解决的阻塞性评论）之后，方可合并。不得在评审结果出来之前合并。
+方案审查、代码审查和正式回报审查按各自适用范围办理，沿 [协作规范](docs/COLLABORATION.md#review-scope-and-evidence-reuse)复用有效证据。候选级独立代码审查按用户明确要求、适用项目合同或具体高风险缺口启用；本仓不另设一律等待 Codex 自动评审的门槛。现有用户指定及平台强制检查保留，适用的阻塞性意见须处理后再合并。
 
 ### Pre-merge review (English translation)
 
-Before merging, wait for Codex automatic review to finish and address all review feedback, leaving no unresolved blocking comments. Do not merge before the review results are available.
+Apply proposal, code, and formal-report review within their respective scopes and reuse valid evidence under the [collaboration rules](docs/COLLABORATION.md#review-scope-and-evidence-reuse). Enable candidate-level independent code review when the user, an applicable project contract, or a specific high-risk gap requires it; this repository adds no blanket wait for Codex automatic review. Preserve existing user-required and platform-required checks and resolve applicable blocking findings before merging.
