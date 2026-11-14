@@ -37,6 +37,8 @@ This also changes the role of the engineer. The highest-leverage work increasing
 
 GSE applies [code simplification](skills/generative-software-engineering/references/code-simplification.md) during implementation: single responsibilities, explicit interfaces and less duplicate state, while preserving promised behavior. More detailed guidance is optional; it adds no stage, approval, reviewer role, fixed passes or full-test requirement. Retirement decisions remain tied to current requirements and actual consumers.
 
+For Web work, GSE consults [Modern Web Guidance](skills/generative-software-engineering/references/modern-web-guidance.md), maintained by the Chrome, Edge, Firefox and MDN teams with the community. The conditional path retrieves relevant platform guidance, matches fallbacks to supported browsers, and verifies the affected user path; legacy scans apply to explicitly scoped modernization work.
+
 ## Start here
 
 - **Definition and invariants:** [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)

@@ -11,6 +11,8 @@ metadata:
 
 GSE is a software development method for turning a user intent into usable, maintainable software. Apply it when engineering decisions span components, integration boundaries, or delivery mechanisms.
 
+涉及 HTML、CSS、浏览器端 JavaScript 或 Web 界面时，实施前按[现代 Web 平台指导](references/modern-web-guidance.md)查询官方建议与兼容范围，并在真实入口验收。纯后端、工具配置和文案修改不触发此入口。
+
 ## Choose the right scope
 
 Routine work follows the project's existing rules and relevant domain skills. Reproducing a bug, inspecting a log, repairing a tool, changing a setting, or making a localized fix does not by itself need GSE. A difficult investigation or a long task is not sufficient reason to load a full development method.
