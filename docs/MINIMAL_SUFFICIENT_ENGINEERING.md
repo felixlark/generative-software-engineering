@@ -26,6 +26,10 @@ Behavior-preserving cleanup retains the promised outputs, errors, side effects a
 
 Use the [code-simplification guidance](../skills/generative-software-engineering/references/code-simplification.md) when an affected implementation is visibly complex or hard to read. The core guidance works without another installed skill. This is part of implementation, not a new stage, reviewer role, approval, fixed number of passes or full-test requirement. Reuse valid evidence and refresh only the affected checks. Judge the change by clearer responsibilities and lower maintenance burden, not deleted line or test counts.
 
+## Web platform guidance
+
+For Web implementation and modernization, use the conditional [Modern Web Guidance reference](../skills/generative-software-engineering/references/modern-web-guidance.md) to consult current platform guidance before choosing custom code or dependencies. Match native features and fallbacks to the project's supported browsers, preserve current compatibility obligations, and verify the affected running user path.
+
 ## Test value
 
 Tests exist to catch meaningful regressions at a useful cost. Prove each business assertion at the cheapest reliable layer, and keep higher-level tests for wiring, environment, or user behavior that lower layers cannot prove.
