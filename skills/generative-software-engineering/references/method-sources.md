@@ -19,3 +19,9 @@
 ## 内置 EGM
 
 [内置 EGM](egm-review.md)适配 Google 的 [Elephant & Goldfish Model](https://github.com/google/elephant-goldfish-model)，参考本机已安装 EGM 0.1.2 的独立新读者、候选评审和裁决修订方法。保留 Copyright 2026 Google LLC 及 [Apache-2.0 许可](../LICENSE.egm)。该 GSE 适配由 GSE 维护；原插件显式调用的交互合同仍归原插件，模型、宿主授权和平台检查不由本方法覆盖。
+
+## code-simplifier in the implementation loop
+
+[代码简化](code-simplification.md)选择性适配 Anthropic 官方 [code-simplifier](https://github.com/anthropics/claude-plugins-official/blob/b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6/plugins/code-simplifier/agents/code-simplifier.md)，核读提交 `b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6`；保留上游 [Apache-2.0 许可](../LICENSE.code-simplifier)。本地表述由 GSE 改写维护，未复制上游的角色提示或执行流水线。
+
+保留行为、聚焦当前改动与清晰优先的原则；不继承 Opus 型号、Claude 专属入口或逐次自动复核要求。GSE 在现有实施中采用这些原则，已获准的功能/限制删除依真实需求与消费者判断；不新增审批、角色或全量测试要求。
