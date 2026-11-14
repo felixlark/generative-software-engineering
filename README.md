@@ -35,6 +35,8 @@ GSE treats code generation as one tactic inside a larger engineering loop. Code 
 
 This also changes the role of the engineer. The highest-leverage work increasingly lies in **goal definition, system design, decomposition, tool and environment design, verification, and accountability**. GSE makes that shift explicit and turns it into an engineering method rather than leaving it as an informal style of “managing coding agents.”
 
+GSE applies [code simplification](skills/generative-software-engineering/references/code-simplification.md) during implementation: single responsibilities, explicit interfaces and less duplicate state, while preserving promised behavior. More detailed guidance is optional; it adds no stage, approval, reviewer role, fixed passes or full-test requirement. Retirement decisions remain tied to current requirements and actual consumers.
+
 ## Start here
 
 - **Definition and invariants:** [`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)

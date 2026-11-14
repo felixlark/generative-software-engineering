@@ -7,6 +7,8 @@ metadata:
 
 # Generative Software Engineering
 
+实施时边写边简化，只处理当前需求涉及的代码，减少重复状态、无用抽象和多余分支，保持已承诺行为；明显复杂、难读的实现按需读[代码简化](references/code-simplification.md)。沿受影响检查复用有效证据，不增加阶段、审批、审查角色、固定轮次或全量测试要求。
+
 GSE is a software development method for turning a user intent into usable, maintainable software. Apply it when engineering decisions span components, integration boundaries, or delivery mechanisms.
 
 ## Choose the right scope
