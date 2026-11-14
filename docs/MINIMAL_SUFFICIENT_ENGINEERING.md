@@ -18,6 +18,14 @@ Add a new abstraction, state, adapter, fallback, feature flag, migration, compat
 
 Prefer changes that reduce duplicate state, responsibility, rules, and future change points.
 
+## Inline simplification
+
+Simplify while implementing the current change: give modules one clear responsibility and explicit interfaces, reduce duplicate state, unnecessary abstractions and branches, and prefer readable code over fewer lines. Keep this work within the requested scope.
+
+Behavior-preserving cleanup retains the promised outputs, errors, side effects and public contracts. Removing a capability, limit, compatibility path or dedicated test instead follows the current requirement and actual consumer evidence; it is not justified by a simplifier's stylistic preference.
+
+Use the [code-simplification guidance](../skills/generative-software-engineering/references/code-simplification.md) when an affected implementation is visibly complex or hard to read. The core guidance works without another installed skill. This is part of implementation, not a new stage, reviewer role, approval, fixed number of passes or full-test requirement. Reuse valid evidence and refresh only the affected checks. Judge the change by clearer responsibilities and lower maintenance burden, not deleted line or test counts.
+
 ## Test value
 
 Tests exist to catch meaningful regressions at a useful cost. Prove each business assertion at the cheapest reliable layer, and keep higher-level tests for wiring, environment, or user behavior that lower layers cannot prove.
