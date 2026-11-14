@@ -23,3 +23,7 @@ When a project already provides a delivery graph, register the next executable o
 Treat routine executor recovery as engineering work within existing authority. Diagnose the pending operation and supported executor; verify useful progress after recovery. Preserve explicit pauses, budget controls, authentication and approval boundaries. A stale label or timeout does not authorize duplicate work or takeover of an uncertain writer. Read back uncertain side effects before retrying.
 
 Follow the maintained [harness boundary](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/HARNESS.md) when changing the delivery infrastructure itself. Do not construct a new harness to repair a localized product defect.
+
+## Coordination stalls
+
+For mutual waits, repeated unchanged status checks, or ready increments stuck behind one release, use [Resolve coordination stalls](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#resolve-coordination-stalls). That section owns the dependency diagnosis, frozen-batch sequencing and distinction between message delivery, writer handover and outcome acceptance.

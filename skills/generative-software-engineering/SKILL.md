@@ -55,3 +55,7 @@ Preserve consequential user decisions and unresolved work across handoffs or con
 - 以上方法是按风险选用的工程操作，不构成另一条固定流水线；常规局部修复继续由当前 Agent 完成相称验证。参考来源和适配边界见 [来源说明](references/method-sources.md)。
 - For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). A scheduled check is continuation, not delivery evidence.
 - For methodology design or deeper engineering questions, consult the maintained [specification](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/SPECIFICATION.md) and its linked owning documents. Product commands and operational details belong in the project's rules and runbooks.
+
+## 并行协作出现等待时
+
+并行任务互等、反复查相同状态或就绪成果积压在同一发布窗口时，按[解除协调停滞](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#resolve-coordination-stalls)核实际依赖和原负责人，在原案解除无依据的等待；收敛重复传话，按准确版本与配置分别采用、验收。此入口用于处理已出现的协调问题，不为普通小修增加检查表或常驻协调角色。
