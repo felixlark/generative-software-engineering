@@ -38,6 +38,8 @@ GSE 把代码生成看作完整工程循环中的一种手段。代码仍然重�
 
 GSE在实施中应用[代码简化](skills/generative-software-engineering/references/code-simplification.md)：单一职责、明确接口、减少重复状态，同时保持已承诺行为。详细方法按需读取，不增加阶段、审批、审查角色、固定轮次或全量测试要求；退役行为仍依据当前需求与实际消费者判断。
 
+Web 开发按需使用[Modern Web Guidance（现代 Web 平台指导）](skills/generative-software-engineering/references/modern-web-guidance.md)，由 Chrome、Edge、Firefox、MDN 团队与社区共同维护：查询相关平台指南，按项目支持的浏览器选择兼容方案，再验收受影响的真实路径；旧模式扫描用于明确范围的现代化任务。
+
 ## 从这里开始
 
 - **定义与不变量：**[`docs/SPECIFICATION.md`](docs/SPECIFICATION.md)

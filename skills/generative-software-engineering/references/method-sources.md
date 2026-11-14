@@ -25,3 +25,9 @@
 [代码简化](code-simplification.md)选择性适配 Anthropic 官方 [code-simplifier](https://github.com/anthropics/claude-plugins-official/blob/b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6/plugins/code-simplifier/agents/code-simplifier.md)，核读提交 `b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6`；保留上游 [Apache-2.0 许可](../LICENSE.code-simplifier)。本地表述由 GSE 改写维护，未复制上游的角色提示或执行流水线。
 
 保留行为、聚焦当前改动与清晰优先的原则；不继承 Opus 型号、Claude 专属入口或逐次自动复核要求。GSE 在现有实施中采用这些原则，已获准的功能/限制删除依真实需求与消费者判断；不新增审批、角色或全量测试要求。
+
+## Modern Web Guidance：Web 平台的按需依据
+
+按用户提供的 [ChromiumDev 原帖](https://x.com/ChromiumDev/status/2121339675667309047)，通过 XURL 取得完整 `article.plain_text`，并核对 [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) 提交 `4dd968349e54ca45a05dd5c818fb035c9054b022`、npm 包 1.0.0 与官方文档。该技能由 Chrome、Edge、Firefox、MDN 团队及社区共同维护，提供现代 Web 平台、无障碍和兼容指导。
+
+[Web 平台执行参考](modern-web-guidance.md)选择性适配其先查询再取指南、按项目浏览器范围决定兼容方案、核查实际实现以及有范围的旧模式扫描；保留 [Apache-2.0 许可](../LICENSE.modern-web-guidance)。不复制指南库，不自动启用机器人、全仓改造或额外流水线；上游案例与评测数字不作为 GSE 已验证的收益。
