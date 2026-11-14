@@ -18,12 +18,12 @@ For GitHub README and public posts, follow the [communication language and publi
 
 ## 限制类改动规则
 
-1. 新增或调小任何上限、槽位、名额、闸门、门槛、退避（包括并发数、负载准入、超时退避等）时，PR 正文须单列「新增限制」一节，写明位置、默认值和依据，经仓库负责人定稿后才可合并。此类改动不得绕过 PR 直接进入 main。
+1. 新增或调小任何上限、槽位、名额、闸门、门槛、退避（包括并发数、负载准入、超时退避等）时，PR 正文须单列「新增限制」一节，写明位置、默认值和依据。此类改动不得绕过 PR 直接进入 main。
 2. 资源类参数默认不限、只观测；确需限制时须通过显式配置开启，不得在代码中写死最大值。外部硬限制（如外部接口限流、部署锁）须在注释中写明来源。
 
 ### Limit-change rules (English translation)
 
-1. When adding or lowering any limit, slot count, quota, gate, threshold, or backoff (including concurrency, load admission, and timeout backoff), the PR body must include a separate “新增限制” (New limits) section stating the location, default value, and rationale. The repository owner must finalize the change before it can be merged. Such changes must not bypass a PR to enter main directly.
+1. When adding or lowering any limit, slot count, quota, gate, threshold, or backoff (including concurrency, load admission, and timeout backoff), the PR body must include a separate “新增限制” (New limits) section stating the location, default value, and rationale. Such changes must not bypass a PR to enter main directly.
 2. Resource parameters default to unlimited operation with observation only. Any necessary limit must be enabled through explicit configuration; do not hard-code maximum values. Comments must cite the source of external hard limits, such as external API rate limits or deployment locks.
 
 ## 合并前评审
@@ -33,3 +33,7 @@ For GitHub README and public posts, follow the [communication language and publi
 ### Pre-merge review (English translation)
 
 Apply proposal, code, and formal-report review within their respective scopes and reuse valid evidence under the [collaboration rules](docs/COLLABORATION.md#review-scope-and-evidence-reuse). Enable candidate-level independent code review when the user, an applicable project contract, or a specific high-risk gap requires it; this repository adds no blanket wait for Codex automatic review. Preserve existing user-required and platform-required checks and resolve applicable blocking findings before merging.
+
+## 自动交付
+
+已进入开发交付的事项，由原结果负责人连续完成相称检查、提交推送、开 PR、自动合并、既定环境安装／部署及真实交互验收，不再逐阶段等待人工批准。必要审查由负责人自动组织并处理实质问题，不以等待特定云评审渠道作为默认停顿点；仅在本人明确指定亲验时等待本人。测试失败或实际缺陷继续修复；任务外敏感动作和本人明确暂停仍按具体边界办理。
