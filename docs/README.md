@@ -12,3 +12,5 @@ GSE uses a single-owner documentation rule: one rule has one home. Other documen
 | [`HARNESS.md`](HARNESS.md) | runtime capabilities and the boundary between method and infrastructure |
 
 Templates instantiate these rules without extending them. Examples illustrate them. Research notes can challenge them but are non-normative until promoted here.
+
+The [Skill](../skills/generative-software-engineering/SKILL.md) owns engineering routing and delivery integration. Its [routing table](../skills/generative-software-engineering/references/skill-routing.md) calls independently maintained specialist skills; their execution details stay at the source. Research proposals remain in [research](../research/README.md) until promoted.

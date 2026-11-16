@@ -1,63 +1,40 @@
 ---
 name: generative-software-engineering
-description: Guide substantial software development that needs cross-component design, coordinated integration, or delivery architecture. Use for features, structural refactoring, and systemic defects; skip localized debugging, routine bug fixes, environment recovery, small configuration edits, and read-only reviews.
+description: 软件开发、修复、重构、集成与交付的统一入口。按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付。
 metadata:
-  short-description: Engineering guidance for substantial software changes
+  revision: "2026-11-16"
+  short-description: 统一工程入口，按需串联独立技能并完成真实交付
 ---
 
-# Generative Software Engineering
+# GSE 工程入口
 
-实施时边写边简化，只处理当前需求涉及的代码，减少重复状态、无用抽象和多余分支，保持已承诺行为；明显复杂、难读的实现按需读[代码简化](references/code-simplification.md)。沿受影响检查复用有效证据，不增加阶段、审批、审查角色、固定轮次或全量测试要求。
+从用户要看到的结果出发，核对实际差异、范围、授权和验收入口，由原结果负责人持续完成最小完整变更与真实交付。小修直接实施和定向复验；重要取舍才形成方案。只读解释、设计或起草按用户所请求的产物交付。
 
-GSE is a software development method for turning a user intent into usable, maintainable software. Apply it when engineering decisions span components, integration boundaries, or delivery mechanisms.
+GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维护。新装工程或流程技能接入时，只记录触发条件、当前入口与交接结果，具体规则、案例、角色和工具协议留在原技能。调用时读取当前可用版本，更新各自来源即可生效，不把安装变成向 GSE 复制内容的步骤。
 
-涉及 HTML、CSS、浏览器端 JavaScript 或 Web 界面时，实施前按[现代 Web 平台指导](references/modern-web-guidance.md)查询官方建议与兼容范围，并在真实入口验收。纯后端、工具配置和文案修改不触发此入口。
+## 按当前问题选路
 
-## Choose the right scope
+按[技能路由](references/skill-routing.md)定位当前安装入口，只加载本次实际需要的技能：
 
-Routine work follows the project's existing rules and relevant domain skills. Reproducing a bug, inspecting a log, repairing a tool, changing a setting, or making a localized fix does not by itself need GSE. A difficult investigation or a long task is not sufficient reason to load a full development method.
+- 决定实现范围、增加机制或验证工作量时，使用 **avoid-overkill** 的工程模式；它也适用于检查 GSE 自身的流程改动。
+- 故障先用 **systematic-debugging**；需要理解调用链、历史理由或设计模块边界时，选对应 **pstack** 叶技能。
+- 拟定或实质修改可执行方案时，调用 **egm:egm-auto-review** 做独立审查；用户明确选择完整 EGM 流程时走对应原技能。
+- HTML、CSS 或浏览器端 JavaScript 工作，实施前调用 **modern-web-guidance:modern-web-guidance**；当前代码确需简化时调用 **code-simplifier**。
+- 准备宣布完成时，按证据缺口调用 **verification-before-completion**；交付反复中断或提前返回时调用 **end-to-end-delivery**，已获准长周期接续沿 **long-running-delivery**。
 
-Escalate to GSE when findings require coordinated changes, structural design, or a new integration or delivery approach. State the concrete reason briefly. Explicit user invocation also applies, with detail proportional to the requested work.
+这些是场景入口。加载一个技能不要求把整张表执行一遍；同一候选仍有效的检查与审查证据直接复用。依赖的定位、缺失处理及输出衔接统一见路由表，GSE 不保存替代执行副本。
 
-Loading GSE does not create a planning gate, role pipeline, Goal, automation, delivery graph, or release project. Use existing project mechanisms when needed. Do not load the full methodology or conditional references by default.
+## 执行与完成
 
-## Develop toward a usable result
+编辑前核分支、已有改动与实际 writer，遵项目 checkout 政策。共享现场单 writer，未知副作用先对账。沿用已确认的需求、决定、授权和原任务；只问会改变目标、重要取舍或授权的问题。加载技能本身不扩展行动权限。
 
-For consequential decisions, establish the intended outcome, scope, affected behavior, important invariants, and completion evidence in the existing task record. Obvious details do not need a formal contract or separate document.
+在授权内实现、验证、集成和交付。选择能覆盖实际失败及受影响行为的最低充分证据；服务、跨端、持久化和界面按真实在用版本与承诺入口验收。构建、安装、健康与业务接受各自举证。项目必需检查保留，相关变化才重验。
 
-Inspect the relevant system, implement a small coherent change, verify it, integrate it, and reach the delivery target implied by the request and existing authorization. These are adaptable engineering activities, not mandatory sequential stages. Do not expand a localized change into a whole-product release or stop a promised user delivery at a code commit.
+尽早集成可审阅、可回滚的完整增量。失败沿根因修复到原始需求满足；准确的外部阻塞记录在原案，继续独立获准工作。保留正常运行状态，汇报变化、验证及实质未完项。规范归[生命周期](https://github.com/felixlark/generative-software-engineering/blob/main/docs/LIFECYCLE.md)、[证据](https://github.com/felixlark/generative-software-engineering/blob/main/docs/EVIDENCE.md)与[最小充分工程](https://github.com/felixlark/generative-software-engineering/blob/main/docs/MINIMAL_SUFFICIENT_ENGINEERING.md)。
 
-Prefer established software engineering practices: small batches, short integration cycles, focused regression checks, reproducible candidates, and fast user feedback. Add architecture or process only when a current requirement or demonstrated risk justifies it.
+## GSE 自身的按需参考
 
-## Coordinate only where needed
-
-Each requested outcome has an accountable task owner. This does not require a permanent project-wide coordinating Agent. Delegate independent implementation, research, or review when its value exceeds handoff and integration cost.
-
-Follow repository policy for source and Git writes. Parallel writers require permitted isolation and known baselines; shared mutable resources require exclusive ownership. GSE does not override local rules or prescribe a fixed agent count.
-
-For multi-task integration, batched releases, resource queues, or stalled delivery continuations, read [delivery-coordination.md](references/delivery-coordination.md). Ordinary fixes do not need this reference.
-
-## Verify the affected behavior
-
-Choose evidence that can prove the actual claim. Focused tests may prove logic; changed user paths need verification on the appropriate running surface. Bind evidence to the relevant candidate or state and refresh only conclusions affected by subsequent changes.
-
-Distinguish implementation, checks, deployment or installation, runtime behavior, and acceptance when those states matter to the request. Use independent evaluation where material risk or subjectivity warrants it; do not add a review stage automatically.
-
-Preserve consequential user decisions and unresolved work across handoffs or context loss. Check original messages before treating a summary or an unanswered recommendation as a confirmed requirement. Close against the accepted outcome and its evidence; identify the exact remaining dependency when it is unfinished.
-
-## Conditional references
-
-- 创建或实质修改可执行方案、架构或高影响操作流程时，按[内置 EGM](references/egm-review.md)独立审视、裁决与定向复审；明确小修直接实施并验证。复用同候选、环境和范围的有效证据，不因技能入口重复开评审。
-
-- 修改接口、协议、持久化、共享状态或跨组件行为时，读 [修改影响与设计取舍](references/change-design.md)：验证支撑安全性的关键事实；有实质架构取舍才比较候选，不以跨函数为触发器。
-- 高风险变更、争议设计或明确要求独立审查时，读 [独立审查](references/independent-review.md)。审查者隔离实现结论，主 Agent 以证据裁决；普通小修不自动增加角色。
-- 项目验收入口反复摸索或有多个用户入口时，读 [项目验收地图](references/project-verification.md)，复用项目控制面并记录逐项覆盖；地图存在不等于已验收。
-- 同类工程错误重复发生时，读 [重复错误治理](references/repeated-errors.md)，优先用结构和可执行约束拦截，不把每次纠正都追加为全局规则。
-- 依据性能数字选型、优化或报告回归时，读 [性能结论核验](references/performance-evidence.md)，核对实际工作、正确性、测量条件和端到端影响。
-- 以上方法是按风险选用的工程操作，不构成另一条固定流水线；常规局部修复继续由当前 Agent 完成相称验证。参考来源和适配边界见 [来源说明](references/method-sources.md)。
-- For an explicitly requested recurring closure check, read [delivery-closure-heartbeat.md](references/delivery-closure-heartbeat.md). A scheduled check is continuation, not delivery evidence.
-- For methodology design or deeper engineering questions, consult the maintained [specification](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/SPECIFICATION.md) and its linked owning documents. Product commands and operational details belong in the project's rules and runbooks.
-
-## 并行协作出现等待时
-
-并行任务互等、反复查相同状态或就绪成果积压在同一发布窗口时，按[解除协调停滞](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#resolve-coordination-stalls)核实际依赖和原负责人，在原案解除无依据的等待；收敛重复传话，按准确版本与配置分别采用、验收。此入口用于处理已出现的协调问题，不为普通小修增加检查表或常驻协调角色。
+- 候选级独立代码审查：用户、项目要求或具体高风险缺口时读[独立审查](references/independent-review.md)。
+- 多入口验收与项目合同衔接：[项目验收地图](references/project-verification.md)；性能主张：[性能证据](references/performance-evidence.md)。
+- 共享交接、增量集成与并行互等：[交付协调](references/delivery-coordination.md)及[解除协调停滞](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#resolve-coordination-stalls)。
+- 方法归属、历史来源与维护边界：[方法来源](references/method-sources.md)。

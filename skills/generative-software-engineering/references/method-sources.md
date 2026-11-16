@@ -1,33 +1,27 @@
-# 工程方法来源与适配边界
+# 方法来源与维护归属
 
-以下按需参考方法借鉴 Lauren Tan 的 [pstack](https://github.com/cursor/plugins/tree/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack)，核验版本 0.15.9，提交 `e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a`。保留其 [MIT 许可与版权声明](../LICENSE.pstack)。这是选择性适配，不安装或执行 Cursor 插件，也不自动跟随上游更新。
+## 当前执行来源
 
-| 本地方法 | 上游依据 |
+当前触发条件、技能名称、发现方式及交接产物统一归[技能路由](skill-routing.md)。GSE 维护入口与交付衔接；专门方法读取各自实际安装的当前 `SKILL.md` 及必要资源。未来接入同样只加路由，方法修订回原技能。
+
+| 独立来源 | 用途与归属 |
 | --- | --- |
-| [修改影响与设计取舍](change-design.md) | [blast-radius](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/blast-radius/SKILL.md)、[architect](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/architect/SKILL.md) |
-| [独立审查](independent-review.md) | [interrogate](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/interrogate/SKILL.md) |
-| [项目验收地图](project-verification.md) | [create-verification-skill](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/create-verification-skill/SKILL.md) |
-| [重复错误治理](repeated-errors.md) | [correct](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/correct/SKILL.md) |
-| [性能结论核验](performance-evidence.md) | [benchmark-checklist](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/benchmark-checklist/SKILL.md)、[eval](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/skills/poteto-mode/playbooks/eval.md) |
+| [avoid-overkill](https://github.com/6Kmfi6HP/avoid-overkill) | 工程投入与写作比例；本次核读当前安装入口及 README，工程模式接入 GSE，案例继续由该技能维护 |
+| Lauren Tan 的 [pstack](https://github.com/cursor/plugins/tree/main/pstack) | 工程专项叶技能；调用当前安装入口，GSE 不再维护其执行步骤副本 |
+| Google 的 [Elephant & Goldfish Model](https://github.com/google/elephant-goldfish-model) | 方案构思、起草与独立审查；角色、标准、迭代合同归 EGM |
+| Anthropic 的 [code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier) | 当前代码的行为保持型简化；使用实际安装技能 |
+| [Modern Web Guidance](https://github.com/GoogleChrome/modern-web-guidance) | Chrome、Edge、Firefox、MDN 团队与社区维护的 Web 指导；协议、工具参数与平台指南归官方技能 |
 
-这些文件实例化 GSE 的现有责任、证据与复杂度原则；规范冲突以 [GSE 规范](https://github.com/felixlark/generative-software-engineering/blob/main/docs/SPECIFICATION.md) 的对应 owner 为准，用户目标、项目权限和真实工具合同保持优先。
+其他工程技能依当前宿主目录定位，依赖可用性和实际调用分别取证。本入口不固定版本，不代表自动安装／升级原技能；复用仍有效的来源证据。
 
-适配保留风险驱动、单 owner、关键事实证明、独立证据判断和可复用验收；不移植 Cursor 的 Task／模型 slug／loop／alwaysApply 配置，也不引入强制委派、自动外发、worktree 或 PR 流水线。多模型共识不作为事实证明，注释和兼容层按实际合同保留；运行和发布走项目已授权控制面。
+## 历史适配与归因
 
-模型与推理强度沿用当前用户／任务设置，本套方法不维护第二份型号表。每次实际改动只加载所需参考，不要求读取上游全文或整套原则。
+下列版本只记录旧适配出处，不再充当专门技能的执行合同。现存参考文件保留薄入口，旧备份仅供追溯；保留第三方许可与版权声明。
 
-## 内置 EGM
+- pstack：历史核验 0.15.9、提交 `e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a`；2026-11-11 另核读 `63912a91d52c43946f974f2aaf661334a6116a82` 的第一性原理专题。保留 [MIT 许可](../LICENSE.pstack)。
+- EGM：历史适配依据本机 0.1.2，旧版曾内置角色、裁决与收敛规则；现改为调用原技能。保留 Copyright 2026 Google LLC 与 [Apache-2.0 许可](../LICENSE.egm)。
+- code-simplifier：历史核读提交 `b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6`，保留对应 [Apache-2.0 许可](../LICENSE.code-simplifier)。实际安装技能的许可依其来源，历史声明不推定覆盖新版本。
+- Modern Web Guidance：历史核读提交 `4dd968349e54ca45a05dd5c818fb035c9054b022`、npm 包 1.0.0；旧查询协议快照退出 GSE 执行参考。保留 [Apache-2.0 许可](../LICENSE.modern-web-guidance)。
+- Lauren（`@poteto`）游戏开发经验的独立归纳留在原研究记录，作者自述与 GSE 实验结果分别取证；研究未晋升时保持研究状态。
 
-[内置 EGM](egm-review.md)适配 Google 的 [Elephant & Goldfish Model](https://github.com/google/elephant-goldfish-model)，参考本机已安装 EGM 0.1.2 的独立新读者、候选评审和裁决修订方法。保留 Copyright 2026 Google LLC 及 [Apache-2.0 许可](../LICENSE.egm)。该 GSE 适配由 GSE 维护；原插件显式调用的交互合同仍归原插件，模型、宿主授权和平台检查不由本方法覆盖。
-
-## code-simplifier in the implementation loop
-
-[代码简化](code-simplification.md)选择性适配 Anthropic 官方 [code-simplifier](https://github.com/anthropics/claude-plugins-official/blob/b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6/plugins/code-simplifier/agents/code-simplifier.md)，核读提交 `b5b01ac4f889fec0c4c6bb89f27ca7c8574473f6`；保留上游 [Apache-2.0 许可](../LICENSE.code-simplifier)。本地表述由 GSE 改写维护，未复制上游的角色提示或执行流水线。
-
-保留行为、聚焦当前改动与清晰优先的原则；不继承 Opus 型号、Claude 专属入口或逐次自动复核要求。GSE 在现有实施中采用这些原则，已获准的功能/限制删除依真实需求与消费者判断；不新增审批、角色或全量测试要求。
-
-## Modern Web Guidance：Web 平台的按需依据
-
-按用户提供的 [ChromiumDev 原帖](https://x.com/ChromiumDev/status/2121339675667309047)，通过 XURL 取得完整 `article.plain_text`，并核对 [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) 提交 `4dd968349e54ca45a05dd5c818fb035c9054b022`、npm 包 1.0.0 与官方文档。该技能由 Chrome、Edge、Firefox、MDN 团队及社区共同维护，提供现代 Web 平台、无障碍和兼容指导。
-
-[Web 平台执行参考](modern-web-guidance.md)选择性适配其先查询再取指南、按项目浏览器范围决定兼容方案、核查实际实现以及有范围的旧模式扫描；保留 [Apache-2.0 许可](../LICENSE.modern-web-guidance)。不复制指南库，不自动启用机器人、全仓改造或额外流水线；上游案例与评测数字不作为 GSE 已验证的收益。
+GSE 自有责任、生命周期和证据语义见[规范](https://github.com/felixlark/generative-software-engineering/blob/main/docs/SPECIFICATION.md)。宿主模型、工具与权限继续沿用户及项目约定。

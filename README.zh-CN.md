@@ -36,9 +36,7 @@ GSE 把代码生成看作完整工程循环中的一种手段。代码仍然重�
 
 这也改变了工程师的角色。高价值工作越来越集中在**目标定义、系统设计、任务分解、工具与环境设计、验证，以及结果责任**。GSE 明确这一变化，将其转化为工程方法，而不只是一种非正式的“管理编码 Agent”的工作方式。
 
-GSE在实施中应用[代码简化](skills/generative-software-engineering/references/code-simplification.md)：单一职责、明确接口、减少重复状态，同时保持已承诺行为。详细方法按需读取，不增加阶段、审批、审查角色、固定轮次或全量测试要求；退役行为仍依据当前需求与实际消费者判断。
-
-Web 开发按需使用[Modern Web Guidance（现代 Web 平台指导）](skills/generative-software-engineering/references/modern-web-guidance.md)，由 Chrome、Edge、Firefox、MDN 团队与社区共同维护：查询相关平台指南，按项目支持的浏览器选择兼容方案，再验收受影响的真实路径；旧模式扫描用于明确范围的现代化任务。
+GSE 是统一工程入口：按[技能路由](skills/generative-software-engineering/references/skill-routing.md)选择 avoid-overkill、pstack、EGM、代码简化、现代 Web 指导及交付技能。GSE 只维护何时调用、入口与结果衔接；具体方法、案例和工具协议由各技能独立更新，调用时读取当前安装版本。新增工程或流程技能也按此方式接入。
 
 ## 从这里开始
 
