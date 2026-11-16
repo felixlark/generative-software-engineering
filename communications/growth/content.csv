@@ -1,2 +1,2 @@
 content_id,title,source_path,stage,next_action
-2026-11-16-avoid-overkill,GSE 迭代笔记 01：avoid-overkill,../iterations/2026-11-16-avoid-overkill/source.md,awaiting_publication_authorization,对已完成首包取得具体发布决定
+2026-11-16-avoid-overkill,GSE 迭代笔记 01：avoid-overkill,../iterations/2026-11-16-avoid-overkill/source.md,published_awaiting_observation,按publication.json的24h/7d时点采集；后续发布逐次确认

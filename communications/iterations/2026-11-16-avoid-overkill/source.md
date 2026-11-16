@@ -8,7 +8,7 @@
 - 示意案例：修复保存失败，先定位根因、完成修复，再验证用户能保存。用于解释方法，不声称本次修复了真实保存功能。
 - 预期效果：减少无依据机制和重复工作，使交付路径更清楚。尚无同口径实战对照，不写节省比例。
 - 公开身份：仅 @felixlark。正文、图、替代文本及预览均不包含现实身份；当前稿不附可能关联现实身份的 GSE 仓库链接。
-- 状态：首发候选；发布等待对当前成品的明确授权。双语正文见 drafts.md，图像提示词保留原文，最终图以 poster-zh.png 与 poster-en.png 为准。
+- 状态：本轮首发已获明确授权并完成发布、官方读回和实际页面验收；后续逐次确认。双语正文见 drafts.md，图像提示词保留原文，最终图以 poster-zh.png 与 poster-en.png 为准。
 
 ## 交付文件
 
@@ -17,3 +17,9 @@
 - [中文生成提示词](prompt-zh.txt)与[英文生成提示词](prompt-en.txt)
 
 图像使用内置 image_gen 生成，并定向补充来源署名；主 Agent 已逐项核对文字、概念示意、来源和公开身份。
+
+## 公开结果
+
+- [中文帖子](https://x.com/felixlark/status/2122168914285351344) · [发布页面实录](evidence/published-zh.png)
+- [English post](https://x.com/felixlark/status/2122168925849030958) · [Published page](evidence/published-en.png)
+- [发布回执与观测时点](publication.json)
