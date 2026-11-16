@@ -49,3 +49,7 @@ GSE is not a synonym for code generation, prompt engineering, harness engineerin
 ## Method/runtime separation
 
 The method defines responsibilities, lifecycle, collaboration semantics, evidence, and engineering discipline. A harness supplies context, tools, permissions, isolation, persistent identifiers, execution, and observation. Their boundary is specified in [`HARNESS.md`](HARNESS.md).
+
+## Integrated engineering workflow
+
+The [GSE skill](../skills/generative-software-engineering/SKILL.md) is the unified entry point for outcome ownership and delivery. Its [routing table](../skills/generative-software-engineering/references/skill-routing.md) selects independently maintained specialist skills, including avoid-overkill. Specialist methods, roles, cases, and tool contracts belong to their current sources; GSE retains responsibility, lifecycle, and evidence semantics without embedding another execution copy.
