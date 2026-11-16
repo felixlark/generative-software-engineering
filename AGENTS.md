@@ -16,6 +16,10 @@ Research notes are hypotheses until promoted into the normative docs. Benchmarks
 
 For GitHub README and public posts, follow the [communication language and publication receipt requirements](CONTRIBUTING.md#public-communication-languages).
 
+## 独立技能接入
+
+GSE 是工程技能的统一入口。接入独立工程或流程技能只维护触发条件、名称／发现方式与交接结果，执行时读取原技能当前版本；方法正文、案例、角色、标准和工具协议由原技能迭代，不复制到 GSE 维护。清理重复内容时保留 GSE 自有交付语义、必要归因与历史许可。
+
 ## 限制类改动规则
 
 1. 新增或调小任何上限、槽位、名额、闸门、门槛、退避（包括并发数、负载准入、超时退避等）时，PR 正文须单列「新增限制」一节，写明位置、默认值和依据。此类改动不得绕过 PR 直接进入 main。
