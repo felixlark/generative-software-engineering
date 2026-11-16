@@ -1,0 +1,56 @@
+{
+  "content_id": "2026-11-16-avoid-overkill",
+  "delivered_revision": "88e46270b54d8dee4f02672f85b1101df0b918a5",
+  "authorization": "2026-11-16：只直接发布本轮，后续逐次确认",
+  "posts": [
+    {
+      "language": "zh",
+      "post_id": "2122168914285351344",
+      "url": "https://x.com/felixlark/status/2122168914285351344",
+      "published_at": "2026-11-16T03:24:31.000Z",
+      "author": "@felixlark",
+      "author_id": "27598981",
+      "text": "修一个保存失败，AI 却加了回退、抽象和更多测试。GSE（生成式软件工程）这次接入 6Kmfi6HP 发布的 avoid-overkill，帮助把工程投入对准实际问题：查清根因、完成修复、验证用户能保存。技能接入与选路已验证，减少重复工作的效果继续观察。图中为示意案例。 https://t.co/wZC6g4wOc2",
+      "media": [
+        {
+          "alt_text": "GSE 生成式软件工程接入来源为 6Kmfi6HP/avoid-overkill 的独立技能。海报介绍用途、保存失败的示意案例，以及减少无依据机制和重复工作的预期效果。已验证技能接入与选路，效果待实战复盘。署名 @felixlark。",
+          "height": 1024,
+          "media_key": "3_2122168736614600704",
+          "type": "photo",
+          "width": 1536
+        }
+      ],
+      "observation_24h": "2026-11-17T03:24:31+00:00",
+      "observation_7d": "2026-11-23T03:24:31+00:00",
+      "api_readback": "verified",
+      "visual_acceptance": "verified by OCU in the actual Chrome published page",
+      "screenshot": "evidence/published-zh.png"
+    },
+    {
+      "language": "en",
+      "post_id": "2122168925849030958",
+      "url": "https://x.com/felixlark/status/2122168925849030958",
+      "published_at": "2026-11-16T03:24:34.000Z",
+      "author": "@felixlark",
+      "author_id": "27598981",
+      "text": "GSE (Generative Software Engineering) now routes to avoid-overkill from 6Kmfi6HP. Example: a save action fails. Find the cause, fix it, verify saving. The aim is less speculative machinery. Integration verified; benefits await field evaluation. Illustrative case. https://t.co/0gpLgxOxqc",
+      "media": [
+        {
+          "alt_text": "GSE, Generative Software Engineering, connects to the independent avoid-overkill skill from 6Kmfi6HP/avoid-overkill. The poster explains its purpose, an illustrative save-failure case, and expected benefits. Integration and routing are verified; field benefits remain to be evaluated. By @felixlark.",
+          "height": 1024,
+          "media_key": "3_2122168780734476288",
+          "type": "photo",
+          "width": 1536
+        }
+      ],
+      "observation_24h": "2026-11-17T03:24:34+00:00",
+      "observation_7d": "2026-11-23T03:24:34+00:00",
+      "api_readback": "verified",
+      "visual_acceptance": "verified by OCU in the actual Chrome published page",
+      "screenshot": "evidence/published-en.png"
+    }
+  ],
+  "privacy": "Text, media and alt text use @felixlark; no GSE repository link attached.",
+  "next_publication": "requires per-content confirmation",
+  "first_link_reply": "not applicable; no external link in the approved candidate"
+}
