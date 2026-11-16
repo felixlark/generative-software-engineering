@@ -1,0 +1,14 @@
+Use case: ads-marketing / infographic-diagram.
+Create a polished, typography-led technology announcement poster, English edition, landscape 3:2, high resolution. Use the provided reference ONLY for brand style: warm ivory textured paper, near-black editorial serif headings, muted jade green accent rules and panels. Original new layout, spacious, mobile-legible. Next GSE iteration announcement, authored solely by @felixlark. Do not reproduce the reference's old pstack / EGM content. No real identity, institution, location, external link, QR, or user identity. Attribution to the upstream skill is required. Use the exact copy below.
+Top kicker: "GSE · ITERATION NOTE 01"
+Hero: "Match engineering effort to the real problem"
+Subtitle: "New skill: avoid-overkill"
+Definition: "Generative Software Engineering: an entry point from intent to usable software"
+One elegant visual: a central "GSE" entry connects to an independent tool card "avoid-overkill", subtitle "Keep engineering proportional". Label on connection "Call when needed · Maintain independently". Show orchestration, not a copied skill inside GSE.
+Three generous editorial cards below:
+Card 1 title "WHAT IT ADDS". Body "Decide whether abstractions, fallbacks and tests serve the current requirement."
+Card 2 title "ILLUSTRATIVE CASE". Body "A save action fails: find the cause, fix it, and verify the user can save."
+Card 3 title "EXPECTED BENEFIT". Body "Fewer speculative mechanisms and repeated checks. A clearer path to delivery."
+Small evidence note: "Integration and scenario routing verified. Outcome benefits await field evaluation."
+Footer: "From intent to usable software" and "@felixlark". Add a clearly legible source credit line "Source: 6Kmfi6HP/avoid-overkill".
+No invented percentages, speed badges, fake runtime screenshots, or additional text. Crisp final graphic; restrained professional aesthetic.

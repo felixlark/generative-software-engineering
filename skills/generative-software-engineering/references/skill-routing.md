@@ -58,3 +58,5 @@ EGM 是 Google 的 Elephant & Goldfish Model，使用保有上下文的负责人
 先查原技能是否已覆盖当前问题。接入只增加必要触发、名称／发现方式及返回产物；改进专门方法时改其自身归属。技能各自更新，调用方读取当前版本。这里不设更新定时器，也不承诺替来源自动升级。
 
 历史归因与保留许可见[方法来源](method-sources.md)。GSE 自有规范继续维护结果责任、交付与证据语义。
+
+新技能接入交付时，将新增能力、用途、典型案例、预期效果和实际证据交给[迭代宣发入口](https://github.com/felixlark/generative-software-engineering/blob/main/communications/growth.md)生成对应内容包；具体生产与运营方法继续使用各自技能。
