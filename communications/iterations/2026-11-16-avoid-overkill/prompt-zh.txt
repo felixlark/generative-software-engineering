@@ -1,0 +1,14 @@
+Use case: ads-marketing / infographic-diagram.
+Create a polished, typography-led technology announcement poster, Chinese edition, landscape 3:2, high resolution. Use the provided reference image ONLY for brand style: warm ivory textured paper, near-black editorial serif headings, muted jade green accent rules and panels. Original new layout, spacious, mobile-legible large Chinese text. This is the next iteration announcement for GSE, authored solely by @felixlark. Do not reproduce the reference image's old pstack / EGM content or include any other people, identity, institution, place, external link, QR, or logos. All exact copy below must be legible and correctly written.
+Top kicker: "GSE · 迭代笔记 01"
+Hero: "让工程投入对准真实问题"
+Subtitle: "GSE 新接入 avoid-overkill"
+Definition: "GSE 生成式软件工程：从意图到可用软件的交付入口"
+Under the hero, one elegant visual: a central GSE entry connects to a separate labeled tool card "avoid-overkill". The tool card has subtitle "控制过度设计与验证". A small label on the connection: "按需调用 · 各自维护". It should communicate orchestration of an independent skill, not copying it inside GSE.
+Bottom half: three generous editorial cards, with these exact texts:
+Card 1 title "有什么用". Body "判断抽象、回退和测试是否服务当前需求。"
+Card 2 title "典型案例 · 示意". Body "修复保存失败：先查根因，完成修复，验证用户能保存。"
+Card 3 title "预期效果". Body "减少无依据的机制与重复工作，让交付更清楚。"
+Small final evidence note: "已完成技能接入与场景选路验证；效果待实战复盘。"
+Footer: "从意图到可用软件" and "@felixlark". Add a clearly legible source credit line "来源：6Kmfi6HP/avoid-overkill".
+Use only the exact Chinese text supplied plus GSE and avoid-overkill. No invented performance percentages, no badges claiming speed, no fake screenshots. Crisp final graphic, restrained professional aesthetic.
