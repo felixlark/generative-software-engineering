@@ -12,7 +12,7 @@ Keep changes small enough to review and observe on the product's fast feedback s
 
 A busy lane is a scheduling dependency. Record the owner, next action, and event that makes the task runnable in the existing work record; release resources no longer needed. Continue independent in-scope work or hand off a ready artifact to the existing lane. If distribution or user acceptance is promised, keep that obligation open until its receipt arrives. A queued release is not evidence of release or an external blocker.
 
-Evidence attached to an older candidate must be reassessed when a later change affects its claim. Freeze release candidate identity without freezing unrelated development. The maintained [collaboration rules](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/COLLABORATION.md) and [lifecycle](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/LIFECYCLE.md) define the method; local runbooks own commands and batching policy.
+Evidence attached to an older candidate must be reassessed when a later change affects its claim. Freeze release candidate identity without freezing unrelated development. The maintained [collaboration rules](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md) and [lifecycle](https://github.com/felixlark/generative-software-engineering/blob/main/docs/LIFECYCLE.md) define the method; local runbooks own commands and batching policy.
 
 ## Existing continuation and recovery mechanisms
 
@@ -22,7 +22,7 @@ When a project already provides a delivery graph, register the next executable o
 
 Treat routine executor recovery as engineering work within existing authority. Diagnose the pending operation and supported executor; verify useful progress after recovery. Preserve explicit pauses, budget controls, authentication and approval boundaries. A stale label or timeout does not authorize duplicate work or takeover of an uncertain writer. Read back uncertain side effects before retrying.
 
-Follow the maintained [harness boundary](https://github.com/longbiaochen/generative-software-engineering/blob/main/docs/HARNESS.md) when changing the delivery infrastructure itself. Do not construct a new harness to repair a localized product defect.
+Follow the maintained [harness boundary](https://github.com/felixlark/generative-software-engineering/blob/main/docs/HARNESS.md) when changing the delivery infrastructure itself. Do not construct a new harness to repair a localized product defect.
 
 ## Coordination stalls
 

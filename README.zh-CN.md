@@ -20,7 +20,7 @@ flowchart LR
     C --> E[由证据支持的完成结论]
 ```
 
-GSE 由 **Longbiao CHEN（龙彪）**提出和维护，是一项开放的研究与工程方法。
+GSE 由 **@felixlark**提出和维护，是一项开放的研究与工程方法。
 
 ## 抽象层次的变化：从编码到结果工程
 
@@ -110,11 +110,11 @@ GSE 是统一工程入口：按[技能路由](skills/generative-software-enginee
 如果 GSE 对你的研究、工程流程、教学或 Agent 设计有所帮助，欢迎引用本仓库。机器可读的引用元数据见 [`CITATION.cff`](CITATION.cff)。
 
 ```bibtex
-@misc{chen2026gse,
-  author = {Longbiao Chen},
+@misc{felixlark2026gse,
+  author = {{felixlark}},
   title = {Generative Software Engineering},
   year = {2026},
-  url = {https://github.com/longbiaochen/generative-software-engineering}
+  url = {https://github.com/felixlark/generative-software-engineering}
 }
 ```
 

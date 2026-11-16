@@ -20,7 +20,7 @@ Intent → Executable / Maintainable Software Entity
 
 3/3 GSE v0.1 是一项开放的研究方法，效果仍有待验证。仓库包含方法规范、示例和基准测试协议，欢迎批评与可复现的对比实验。
 
-https://github.com/longbiaochen/generative-software-engineering
+https://github.com/felixlark/generative-software-engineering
 
 ## English
 
@@ -38,4 +38,4 @@ Intent → Executable / Maintainable Software Entity
 
 3/3 GSE v0.1 is an open research method whose effectiveness remains to be tested. Explore the specification, examples, and benchmark protocol. Critiques and reproducible comparisons are welcome.
 
-https://github.com/longbiaochen/generative-software-engineering
+https://github.com/felixlark/generative-software-engineering

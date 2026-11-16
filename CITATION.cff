@@ -3,12 +3,11 @@ message: "If you use Generative Software Engineering in research, engineering, o
 title: "Generative Software Engineering"
 type: software
 authors:
-  - family-names: Chen
-    given-names: Longbiao
+  - name: felixlark
 version: 0.1.0
 date-released: 2026-09-10
-repository-code: "https://github.com/longbiaochen/generative-software-engineering"
-url: "https://github.com/longbiaochen/generative-software-engineering"
+repository-code: "https://github.com/felixlark/generative-software-engineering"
+url: "https://github.com/felixlark/generative-software-engineering"
 keywords:
   - generative software engineering
   - software engineering

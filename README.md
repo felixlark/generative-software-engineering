@@ -19,7 +19,7 @@ flowchart LR
     C --> E[Evidence-backed completion]
 ```
 
-GSE is proposed and maintained by **Longbiao CHEN (龙彪)** as an open research and engineering methodology.
+GSE is proposed and maintained by **@felixlark** as an open research and engineering methodology.
 
 ## The abstraction shift: from coding to outcome engineering
 
@@ -109,11 +109,11 @@ The first public research release is **v0.1**. The research program is intention
 If GSE influences your research, engineering process, teaching, or agent design, please cite this repository. Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
-@misc{chen2026gse,
-  author = {Longbiao Chen},
+@misc{felixlark2026gse,
+  author = {{felixlark}},
   title = {Generative Software Engineering},
   year = {2026},
-  url = {https://github.com/longbiaochen/generative-software-engineering}
+  url = {https://github.com/felixlark/generative-software-engineering}
 }
 ```
 
