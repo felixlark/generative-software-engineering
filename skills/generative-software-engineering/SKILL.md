@@ -1,6 +1,6 @@
 ---
 name: generative-software-engineering
-description: 软件开发、修复、重构、集成与交付的统一入口。按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付。
+description: 软件开发、修复、重构、旧项目／屎山代码全面清理、集成与交付的统一入口。按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付。
 metadata:
   revision: "2026-11-16"
   short-description: 统一工程入口，按需串联独立技能并完成真实交付
@@ -17,6 +17,7 @@ GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维�
 按[技能路由](references/skill-routing.md)定位当前安装入口，只加载本次实际需要的技能：
 
 - 决定实现范围、增加机制或验证工作量时，使用 **avoid-overkill** 的工程模式；它也适用于检查 GSE 自身的流程改动。
+- 陈旧项目、屎山代码、全面精简或仓库瘦身，使用[旧项目全面清理](references/legacy-project-cleanup.md)，贯通需求、架构、代码、测试和部署；不是只格式化当前代码。
 - 故障先用 **systematic-debugging**；需要理解调用链、历史理由或设计模块边界时，选对应 **pstack** 叶技能。
 - 拟定或实质修改可执行方案时，调用 **egm:egm-auto-review** 做独立审查；用户明确选择完整 EGM 流程时走对应原技能。
 - HTML、CSS 或浏览器端 JavaScript 工作，实施前调用 **modern-web-guidance:modern-web-guidance**；当前代码确需简化时调用 **code-simplifier**。
