@@ -1,0 +1,4 @@
+interface:
+  display_name: "软件项目经理"
+  short_description: "对照需求持续交付、协调专员问题并主动验证已交付产品的运行表现"
+  default_prompt: "使用 $software-project-manager 对照需求审视项目，解决阻塞并推进下一项可验收成果。"
