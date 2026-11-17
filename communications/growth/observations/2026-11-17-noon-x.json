@@ -1,0 +1,110 @@
+{
+  "observed_at": "2026-11-17T04:00:01.639175+00:00",
+  "source": "Official XURL /2/tweets with public_metrics,created_at,author_id; authenticated @felixlark",
+  "expected_windows": {
+    "2120063191124525467": {
+      "published_at": "2026-11-10T07:57:08.000Z",
+      "window": 168,
+      "content_id": "2026-11-10-gse-pstack-egm"
+    },
+    "2120063236255154432": {
+      "published_at": "2026-11-10T07:57:19.000Z",
+      "window": 168,
+      "content_id": "2026-11-10-gse-pstack-egm"
+    },
+    "2122168914285351344": {
+      "published_at": "2026-11-16T03:24:31.000Z",
+      "window": 24,
+      "content_id": "2026-11-16-avoid-overkill"
+    },
+    "2122168925849030958": {
+      "published_at": "2026-11-16T03:24:34.000Z",
+      "window": 24,
+      "content_id": "2026-11-16-avoid-overkill"
+    }
+  },
+  "actual_age_hours": {
+    "2120063191124525467": 164.0482,
+    "2120063236255154432": 164.0452,
+    "2122168914285351344": 24.5918,
+    "2122168925849030958": 24.591
+  },
+  "metric_scope": "public aggregate counters; organic/paid and author/natural replies not separated",
+  "response": {
+    "data": [
+      {
+        "author_id": "27598981",
+        "created_at": "2026-11-10T07:57:08.000Z",
+        "edit_history_tweet_ids": [
+          "2120060970177581495",
+          "2120063191124525467"
+        ],
+        "id": "2120063191124525467",
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 93,
+          "like_count": 2,
+          "quote_count": 0,
+          "reply_count": 3,
+          "retweet_count": 0
+        },
+        "text": "生成式软件工程（GSE）是我在用的 AI 开发流程。我融入了 Lauren Tan（@poteto）的工程技能集 pstack，用于设计、调试与验证；以及 Dave Rensin 提出的大象—金鱼模型（EGM），由掌握项目背景的 AI 助手起草方案，再由新上下文中的助手独立评审。从需求推进到实际运行验收，本地版已跑通。 https://t.co/TtNYl8c5I1"
+      },
+      {
+        "author_id": "27598981",
+        "created_at": "2026-11-10T07:57:19.000Z",
+        "edit_history_tweet_ids": [
+          "2120061020991615059",
+          "2120063236255154432"
+        ],
+        "id": "2120063236255154432",
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 71,
+          "like_count": 2,
+          "quote_count": 0,
+          "reply_count": 3,
+          "retweet_count": 0
+        },
+        "text": "Generative Software Engineering (GSE) is my local AI workflow for usable software. It combines Lauren Tan's (@poteto) pstack skills for design, debugging and tests with Dave Rensin's Elephant-Goldfish Model (EGM): draft with context, review with fresh agents. https://t.co/6VRE4rBtkD"
+      },
+      {
+        "author_id": "27598981",
+        "created_at": "2026-11-16T03:24:31.000Z",
+        "edit_history_tweet_ids": [
+          "2122168914285351344"
+        ],
+        "id": "2122168914285351344",
+        "public_metrics": {
+          "bookmark_count": 1,
+          "impression_count": 39,
+          "like_count": 1,
+          "quote_count": 0,
+          "reply_count": 1,
+          "retweet_count": 0
+        },
+        "text": "修一个保存失败，AI 却加了回退、抽象和更多测试。GSE（生成式软件工程）这次接入 6Kmfi6HP 发布的 avoid-overkill，帮助把工程投入对准实际问题：查清根因、完成修复、验证用户能保存。技能接入与选路已验证，减少重复工作的效果继续观察。图中为示意案例。 https://t.co/wZC6g4wOc2"
+      },
+      {
+        "author_id": "27598981",
+        "created_at": "2026-11-16T03:24:34.000Z",
+        "edit_history_tweet_ids": [
+          "2122168925849030958"
+        ],
+        "id": "2122168925849030958",
+        "public_metrics": {
+          "bookmark_count": 0,
+          "impression_count": 25,
+          "like_count": 0,
+          "quote_count": 0,
+          "reply_count": 1,
+          "retweet_count": 0
+        },
+        "text": "GSE (Generative Software Engineering) now routes to avoid-overkill from 6Kmfi6HP. Example: a save action fails. Find the cause, fix it, verify saving. The aim is less speculative machinery. Integration verified; benefits await field evaluation. Illustrative case. https://t.co/0gpLgxOxqc"
+      }
+    ],
+    "meta": {
+      "result_count": 4
+    }
+  }
+}
