@@ -55,10 +55,16 @@ EGM 是 Google 的 Elephant & Goldfish Model，使用保有上下文的负责人
 | 反复工具故障、临时恢复后复发、验收缺口或提前返回 | `end-to-end-delivery` | 执行链恢复和原始结果的完成证据 |
 | 已获准长周期开发或接续 | `long-running-delivery` | 沿原任务保持的进度、交接与交付结果 |
 
+## GSE 宣发审阅
+
+| 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
+| --- | --- | --- |
+| GSE 选题与短稿已写出，尚未翻译或做图时 | `copy-editing`（[Corey Haines / marketingskills](https://github.com/coreyhaines31/marketingskills/tree/main/skills/copy-editing)） | 是否值得讲、目标读者是否能看懂，以及必要修改；衔接归[迭代宣发](https://github.com/felixlark/generative-software-engineering/blob/main/communications/growth.md) |
+
 ## 今后接入新技能
 
 先查原技能是否已覆盖当前问题。接入只增加必要触发、名称／发现方式及返回产物；改进专门方法时改其自身归属。技能各自更新，调用方读取当前版本。这里不设更新定时器，也不承诺替来源自动升级。
 
 历史归因与保留许可见[方法来源](method-sources.md)。GSE 自有规范继续维护结果责任、交付与证据语义。
 
-新技能接入交付时，将新增能力、用途、典型案例、预期效果和实际证据交给[迭代宣发入口](https://github.com/felixlark/generative-software-engineering/blob/main/communications/growth.md)生成对应内容包；具体生产与运营方法继续使用各自技能。
+新技能接入交付时，将新增能力、用途、典型案例、预期效果和实际证据交给[迭代宣发入口](https://github.com/felixlark/generative-software-engineering/blob/main/communications/growth.md)先审选题和短稿，通过后再生成对应内容包；具体生产与运营方法继续使用各自技能。
