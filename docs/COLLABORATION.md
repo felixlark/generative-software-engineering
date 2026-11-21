@@ -55,7 +55,7 @@ An acknowledgement, final receipt, no-reply message, or unchanged status does no
 
 Proposal review checks the intended approach and execution readiness. Code review checks a candidate implementation. Formal-report review checks the claims and evidence presented to its audience. Runtime validation proves affected behavior. Apply each only under its own user, project, or platform requirements; one does not automatically trigger the others. Candidate-level independent code review is required by an explicit user instruction, an applicable project contract, or a specific high-risk gap. Preserve existing user-required and platform-required checks.
 
-Reuse evidence that covers the same candidate, environment, scope, and required independence. One independent review may satisfy multiple entrypoints for claims it actually checked; loading GSE, EGM, and a project template does not require separate panels. A change invalidates only affected conclusions. Keep uncovered claims explicit and recheck substantive changes rather than repeating valid review. Proposal-review mechanics remain in the [EGM reference](../skills/generative-software-engineering/references/egm-review.md).
+Reuse evidence that covers the same candidate, environment, scope, and required independence. One independent review may satisfy multiple GSE entrypoints for claims it actually checked. A change invalidates only affected conclusions. Keep uncovered claims explicit and recheck substantive changes rather than repeating valid review. Proposal review follows the GSE proposal-review route in [skill routing](../skills/generative-software-engineering/references/skill-routing.md#GSE-方案审查).
 
 ## Resolve coordination stalls
 
