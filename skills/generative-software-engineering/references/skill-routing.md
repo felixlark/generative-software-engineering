@@ -35,16 +35,11 @@ pstack 是 Lauren Tan 的工程技能工具集。按实际安装目录读取需�
 | 同类错误复发，确需固化经验 | `correct` / `principle-encode-lessons-in-structure`（pstack） | 落在项目归属处的修复或可执行反馈 |
 | 根据性能数字选型或声称改进 | `benchmark-checklist`（pstack） | 可比条件、正确性与测量结论 |
 
-## 方案审查
+## GSE 方案审查
 
-EGM 是 Google 的 Elephant & Goldfish Model，使用保有上下文的负责人和新上下文读者审查方案。GSE 将稳定候选、原要求、当前决定及必要来源交给 EGM，继续负责核实发现与原始交付。
+新拟、实质修改可执行方案时，由原结果负责人核对用户已经议定的目标、范围、授权、影响面、可选路径、关键风险、证据和最终验收；根据风险调用当前已安装的独立评审能力。得到有效意见后，负责人在同一候选中完成修订与必要复查，继续交付。
 
-| 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
-| --- | --- | --- |
-| 新拟或实质修改可执行方案，且非明确小修／格式调整 | `egm:egm-auto-review` | 实际完成的独立审查、裁决、修订与未解决项 |
-| 用户明确要互动构思、分节起草或完整评审／迭代流程 | `egm:egm-brainstorm` / `egm:egm-draft` / `egm:egm-review` / `egm:egm-review-loop`，按请求选择 | 原技能定义的产物与实际完成状态 |
-
-审查人数、标准、角色文件、复审和收敛条件从所选 EGM 当前技能读取；本入口不维护另一份协议。方案审查与候选代码审查按[各自范围](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#review-scope-and-evidence-reuse)取证。
+讨论与方案审查的成果留在原事项或准确的方案产物中；面向用户的正式回报同时核查实际完成证据、风险及下一动作。方案审查、候选代码审查和真实运行验收按[协作规范](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#review-scope-and-evidence-reuse)分别对证。
 
 ## 平台、验证与持续交付
 
