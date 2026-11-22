@@ -17,6 +17,7 @@ GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维�
 按[技能路由](references/skill-routing.md)定位当前安装入口，只加载本次实际需要的技能：
 
 - 统筹项目持续交付、经理巡办或交付后运营时，使用 **software-project-manager**：对照完整需求与功能/性能目标，协调原负责人和待决定事项，并主动核现役用户旅程。
+- 用户明确要求审查或精简多任务、多 Agent 并行开发治理，尤其是 lane、claim、worktree、合并顺序、分支回收与回滚规约时，使用 **parallel-delivery-review**：先识别真实共享写面和运行资源，优先复用现有 trunk、CI、merge queue、contract tests 与按层回滚。
 - 决定实现范围、增加机制或验证工作量时，使用 **avoid-overkill** 的工程模式；它也适用于检查 GSE 自身的流程改动。
 - 陈旧项目、屎山代码、全面精简或仓库瘦身，使用[旧项目全面清理](references/legacy-project-cleanup.md)，贯通需求、架构、代码、测试和部署；不是只格式化当前代码。
 - 故障先用 **systematic-debugging**；需要理解调用链、历史理由或设计模块边界时，选对应 **pstack** 叶技能。
