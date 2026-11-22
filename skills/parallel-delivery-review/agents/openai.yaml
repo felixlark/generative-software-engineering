@@ -1,0 +1,6 @@
+interface:
+  display_name: "并行交付治理审查"
+  short_description: "审查 lane、claim、合并、分支回收与回滚规约是否过度设计"
+  default_prompt: "使用 $parallel-delivery-review 审查当前并行开发治理，找出真实冲突面，删除重复机制，并给出最小集成与回滚方案。"
+policy:
+  allow_implicit_invocation: false
