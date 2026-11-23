@@ -47,6 +47,7 @@ pstack 是 Lauren Tan 的工程技能工具集。按实际安装目录读取需�
 | 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
 | --- | --- | --- |
 | HTML、CSS、浏览器端 JavaScript 或 Web 界面，在实施前 | `modern-web-guidance:modern-web-guidance` | 当前官方指南及受影响实现的采用情况 |
+| 本机 Chrome 已解压扩展更新、重载、换加载目录或回滚 | [`chrome-extension-update`](../../chrome-extension-update/SKILL.md) | OCU 实际加载路径、版本、ID、启用状态及受影响页面读回 |
 | 生成或实质修改 Codex 技能 | `skill-creator` | 作用域清楚的技能及适用的检查结果 |
 | 准备声称完成，但候选与真实结果的证据尚需核对 | `verification-before-completion` | 与候选和声明绑定的完成证据及真实缺口 |
 | 反复工具故障、临时恢复后复发、验收缺口或提前返回 | `end-to-end-delivery` | 执行链恢复和原始结果的完成证据 |
