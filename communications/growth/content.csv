@@ -1,3 +1,4 @@
 content_id,title,source_path,stage,next_action
-2026-11-16-avoid-overkill,GSE 迭代笔记 01：avoid-overkill,../iterations/2026-11-16-avoid-overkill/source.md,published_24h_observed,2026-11-23中午采集7d；后续发布逐次确认
+2026-11-16-avoid-overkill,GSE 迭代笔记 01：avoid-overkill,../iterations/2026-11-16-avoid-overkill/source.md,published_7d_window_observed,24h及7d采集已完成；后续发布逐次确认
 2026-11-10-gse-pstack-egm,GSE pstack 与 EGM 双语图文,initial-observation.json,published_7d_window_observed,7d窗口已取得更近中心的观测；仅更近中心的有效新观测才补采
+2026-11-23-chrome-extension-update,Chrome 扩展加载来源核对,../iterations/2026-11-23-chrome-extension-update/source.md,withdrawn,用户认为选题价值不足；仅留档
