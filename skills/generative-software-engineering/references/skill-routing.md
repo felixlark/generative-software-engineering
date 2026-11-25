@@ -6,12 +6,13 @@ GSE 是统一入口，负责选路、连接产物与完成原始结果。下表�
 
 1. 先按当前宿主技能目录中的名称和位置取得实际 `SKILL.md`。插件有命名空间时使用完整名称；表中的叶技能也可由已安装的 pstack 根目录定位。只读对应入口，不展开整个技能树。
 2. 读取当前入口，沿其合同获取本次必要的参考、角色或工具；保留用户决定、项目控制面、授权及现有有效证据。路径、命名空间、版本和工具参数由实际安装来源解析，GSE 不固定机器路径或插件缓存版本。
-3. 某项未安装、不可见或工具不可用时，先沿宿主正式安装／修复入口处理。缺少必要授权或无法恢复时，说明具体技能、受影响能力与缺口，继续独立获准工作；不把 GSE 的历史适配冒充该技能执行、独立评审或专项验收。
+3. 某项未安装、不可见或工具不可用时，先沿宿主正式安装／修复入口处理。`professional-engineering-baseline` 是实现类任务的强制依赖；它不可用时记录 `blocked(baseline-missing)`，停止受影响范围内的实现、构建、安装、发布、部署、运行状态变更和工程规则修改，只读分析可继续。其他可选专项技能不可用时，说明具体技能、受影响能力与缺口，继续独立获准工作；不把 GSE 的历史适配冒充该技能执行、独立评审或专项验收。
 
 ## 范围与投入
 
 | 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
 | --- | --- | --- |
+| 所有会改变代码、配置、测试、构建、安装、发布、运行状态或工程规则的开发任务，在实现前 | `professional-engineering-baseline` | 声明的集成基线与受控现场、结果合同、自动化验证、按风险的独立审查、制品来源、回滚、worktree 生命周期和分层完成状态 |
 | 项目负责人巡办、完整需求持续交付、跨模块协调或交付后运营 | `software-project-manager` | 需求与功能/性能验收差距、原owner的近期成果和依赖处置、必要用户决定及真实运行/交付证据 |
 | 用户明确要求审查或设计多任务／多 Agent 并行开发治理，或精简 lane、claim、worktree、分支回收与回滚规约 | `parallel-delivery-review` | 实际冲突面、保留或删除的协调机制、最小隔离、集成与按层回滚方案及相称证据 |
 | 确定实现范围、增加抽象／回退／测试或检查流程成本时 | `avoid-overkill`，工程模式 | 与当前结果和证据相称的变更、验证范围及停止条件 |
@@ -36,18 +37,23 @@ pstack 是 Lauren Tan 的工程技能工具集。按实际安装目录读取需�
 | 同类错误复发，确需固化经验 | `correct` / `principle-encode-lessons-in-structure`（pstack） | 落在项目归属处的修复或可执行反馈 |
 | 根据性能数字选型或声称改进 | `benchmark-checklist`（pstack） | 可比条件、正确性与测量结论 |
 
-## GSE 方案审查
+## 方案审查
 
-新拟、实质修改可执行方案时，由原结果负责人核对用户已经议定的目标、范围、授权、影响面、可选路径、关键风险、证据和最终验收；根据风险调用当前已安装的独立评审能力。得到有效意见后，负责人在同一候选中完成修订与必要复查，继续交付。
+EGM 是 Google 的 Elephant & Goldfish Model，使用保有上下文的负责人和新上下文读者审查方案。GSE 将稳定候选、原要求、当前决定及必要来源交给 EGM，继续负责核实发现与原始交付。
 
-讨论与方案审查的成果留在原事项或准确的方案产物中；面向用户的正式回报同时核查实际完成证据、风险及下一动作。方案审查、候选代码审查和真实运行验收按[协作规范](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#review-scope-and-evidence-reuse)分别对证。
+| 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
+| --- | --- | --- |
+| 新拟或实质修改可执行方案，且非明确小修／格式调整 | `egm:egm-auto-review` | 实际完成的独立审查、裁决、修订与未解决项 |
+| 用户明确要互动构思、分节起草或完整评审／迭代流程 | `egm:egm-brainstorm` / `egm:egm-draft` / `egm:egm-review` / `egm:egm-review-loop`，按请求选择 | 原技能定义的产物与实际完成状态 |
+
+审查人数、标准、角色文件、复审和收敛条件从所选 EGM 当前技能读取；本入口不维护另一份协议。方案审查与候选代码审查按[各自范围](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#review-scope-and-evidence-reuse)取证。
 
 ## 平台、验证与持续交付
 
 | 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
 | --- | --- | --- |
 | HTML、CSS、浏览器端 JavaScript 或 Web 界面，在实施前 | `modern-web-guidance:modern-web-guidance` | 当前官方指南及受影响实现的采用情况 |
-| 本机 Chrome 已解压扩展更新、重载、换加载目录或回滚 | [`chrome-extension-update`](../../chrome-extension-update/SKILL.md) | OCU 实际加载路径、版本、ID、启用状态及受影响页面读回 |
+| 本机 Chrome 已解压扩展更新、重载、换加载目录或回滚 | [`chrome-extension-update`](https://github.com/felixlark/generative-software-engineering/blob/main/skills/chrome-extension-update/SKILL.md) | OCU 实际加载路径、版本、ID、启用状态及受影响页面读回 |
 | 生成或实质修改 Codex 技能 | `skill-creator` | 作用域清楚的技能及适用的检查结果 |
 | 准备声称完成，但候选与真实结果的证据尚需核对 | `verification-before-completion` | 与候选和声明绑定的完成证据及真实缺口 |
 | 反复工具故障、临时恢复后复发、验收缺口或提前返回 | `end-to-end-delivery` | 执行链恢复和原始结果的完成证据 |
