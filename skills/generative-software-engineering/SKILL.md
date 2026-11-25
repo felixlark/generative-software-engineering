@@ -1,8 +1,8 @@
 ---
 name: generative-software-engineering
-description: 软件开发、修复、重构、旧项目／屎山代码全面清理、集成与交付的统一入口。按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付。
+description: 软件开发、修复、重构、旧项目／屎山代码全面清理、集成与交付的统一入口。所有实现类任务默认先应用 professional-engineering-baseline，再按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付；完全只读的解释、分析、调研和未落地草稿按请求交付。
 metadata:
-  revision: "2026-11-16"
+  revision: "2026-11-25"
   short-description: 统一工程入口，按需串联独立技能并完成真实交付
 ---
 
@@ -12,16 +12,27 @@ metadata:
 
 GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维护。新装工程或流程技能接入时，只记录触发条件、当前入口与交接结果，具体规则、案例、角色和工具协议留在原技能。调用时读取当前可用版本，更新各自来源即可生效，不把安装变成向 GSE 复制内容的步骤。
 
+## 强制工程基线
+
+所有会改变代码、配置、测试、构建、安装、部署、运行状态或工程规则的 GSE 任务，在实现前必须加载 [professional-engineering-baseline](../professional-engineering-baseline/SKILL.md)。它约束项目声明的集成基线、受控写入现场、增量集成、自动化验证、独立审查、正式制品来源、回滚和 worktree 生命周期。
+
+完全只读的解释、分析、调研和未落地草稿不触发实现门禁。按风险裁剪检查，不能把基线变成额外审批；无法遵守时说明具体缺口，不得静默跳过或自述完成。
+
+`professional-engineering-baseline` 是强制依赖。入口未安装、不可读或没有同步到当前主版本时，记录 `blocked(baseline-missing)`，停止受影响范围内的实现、构建、安装、发布、部署、运行状态变更和工程规则修改；只读分析可以继续。其他可选专项技能不可用时，才按原规则说明缺口并继续独立工作。
+
+安装副本要与 GSE 源仓 `skills/professional-engineering-baseline/install-manifest.json` 的文件清单和 SHA-256 一致；用 GSE 源仓 `scripts/verify_engineering_skills.py` 对每个实际技能根读回。manifest 缺失、目标文件缺失或哈希不一致，同样记 `blocked(baseline-missing)`。
+
 ## 按当前问题选路
 
 按[技能路由](references/skill-routing.md)定位当前安装入口，只加载本次实际需要的技能：
 
 - 统筹项目持续交付、经理巡办或交付后运营时，使用 **software-project-manager**：对照完整需求与功能/性能目标，协调原负责人和待决定事项，并主动核现役用户旅程。
+- 任何实现、修复、重构、集成、构建、安装、发布或工程治理任务，先应用 **professional-engineering-baseline**：核声明的集成基线与受控现场、定义结果和验证、按风险完成独立审查、控制制品来源与回滚，并按完成状态举证。
 - 用户明确要求审查或精简多任务、多 Agent 并行开发治理，尤其是 lane、claim、worktree、合并顺序、分支回收与回滚规约时，使用 **parallel-delivery-review**：先识别真实共享写面和运行资源，优先复用现有 trunk、CI、merge queue、contract tests 与按层回滚。
 - 决定实现范围、增加机制或验证工作量时，使用 **avoid-overkill** 的工程模式；它也适用于检查 GSE 自身的流程改动。
 - 陈旧项目、屎山代码、全面精简或仓库瘦身，使用[旧项目全面清理](references/legacy-project-cleanup.md)，贯通需求、架构、代码、测试和部署；不是只格式化当前代码。
 - 故障先用 **systematic-debugging**；需要理解调用链、历史理由或设计模块边界时，选对应 **pstack** 叶技能。
-- 拟定或实质修改可执行方案时，沿 **GSE 方案审查**核对目标、假设、风险、方案、验证与交付；需要独立判断时使用当前实际可用的独立评审能力，并复用真实评审证据。
+- 拟定或实质修改可执行方案时，调用 **egm:egm-auto-review** 做独立审查；用户明确选择完整 EGM 流程时走对应原技能。
 - HTML、CSS 或浏览器端 JavaScript 工作，实施前调用 **modern-web-guidance:modern-web-guidance**；当前代码确需简化时调用 **code-simplifier**。
 - 准备宣布完成时，按证据缺口调用 **verification-before-completion**；交付反复中断或提前返回时调用 **end-to-end-delivery**，已获准长周期接续沿 **long-running-delivery**。
 

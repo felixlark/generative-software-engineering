@@ -1,0 +1,4 @@
+interface:
+  display_name: "Professional Engineering Baseline"
+  short_description: "Mandatory delivery discipline for every engineering task"
+  default_prompt: "Use $professional-engineering-baseline before changing code, merging, installing, or releasing."

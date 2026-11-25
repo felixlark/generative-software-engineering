@@ -1,0 +1,23 @@
+{
+  "skill_name": "professional-engineering-baseline",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "修一下 Smart Shadow 安装器：现在从一个旧 worktree 构建的 candidate 仍能覆盖正式 App。改完直接合并并安装。",
+      "expected_output": "先核对旧 worktree 的 owner、声明基线和 dirty 范围，不直接继续写入；按项目声明的集成/发布 ref 和写入隔离政策处理；把安装来源、candidate 标记和 build 回退作为正式边界；运行安装器单测和真实入口拦截；对高风险行为变化做独立审查；只有来源可核验且已集成到声明发布 ref 的制品能正式安装。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "把 README 里的三个失效链接修掉并发布。",
+      "expected_output": "按小型文档改动裁剪流程：核项目声明的集成基线和写入政策，检查链接和渲染，不要求全量测试、构建、安装或高风险评审；如果修改了公开规则仍需按决定范围复核。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把服务的持久化格式升级，旧版本还要滚回一次。给我做完并上线。",
+      "expected_output": "明确旧/新 producer-consumer 与数据迁移矩阵；使用 expand-migrate-contract 或等价安全路径；独立高风险评审；正式制品来源、签名、单调版本、迁移和回滚/补偿 evidence；真实安装用户路径验收后才报告上线完成。",
+      "files": []
+    }
+  ]
+}
