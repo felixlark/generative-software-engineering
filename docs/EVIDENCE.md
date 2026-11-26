@@ -23,6 +23,8 @@ Higher layers are not automatically better. They are required when lower layers 
 - Use an independent evaluator when risk, subjectivity, or self-verification bias materially affects confidence.
 - Record real limitations rather than converting missing evidence into a success claim.
 
+When suite cost is material, the [test execution strategy](../skills/generative-software-engineering/references/test-execution-strategy.md) owns impact closure, incremental selection, reusable pass evidence, cache-invalidating inputs, and the boundary between iteration checks and release-wide verification. This document retains ownership of which evidence proves which claim.
+
 ## Completion gate
 
 A completion record should make it possible to answer:

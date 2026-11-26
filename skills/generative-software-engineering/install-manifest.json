@@ -4,8 +4,8 @@
     "LICENSE.egm": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSE.modern-web-guidance": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSE.pstack": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
-    "SKILL.md": "dd48d3b41379ee004ea656c25bc0096c21a60355998ec19f39a97523c6620d3e",
-    "agents/openai.yaml": "ac33c1e7e87b2c59b8c1d281d39a502ab263c30c0e78acb671f21d32f757f130",
+    "SKILL.md": "1510da997974ff7bf8ff4219f61dc5e88855a66f94c054cf79b4e7af70cd4eeb",
+    "agents/openai.yaml": "cb745095a3640592c8f81ebc5206a4d78ef3f517e361a96bfaa4fdb3b6e1aa44",
     "references/change-design.md": "1e3025c05403a6e65baf44c875b84d5d6db74ef8e2d07b9a1ee2d672581dbf64",
     "references/code-simplification.md": "8a9d773e1456e1c7634006356d4aeee0ee7d36a7b6fb8e7f3ec076681c4d2aba",
     "references/delivery-closure-heartbeat.md": "f92a45e9879977427eb68870be9045f1c372069dc05c7e086f615d4ca5671b45",
@@ -13,15 +13,16 @@
     "references/feature-map-template.md": "f966bb3915b4699f1426dbfb26f209185dffa14204824252452792c4875bfc3c",
     "references/independent-review.md": "35e775dec3cdc95a7b05cc3bd1769842725a8b10c9102777d6f61c3df3633bad",
     "references/legacy-project-cleanup.md": "99be730ca7c37bc6803cfa3146e78b125dcd349b65d4b51cd0d979c336bc6214",
-    "references/method-sources.md": "292c7a3e910561e6f535082eeb4cebe185028ea4a9213aa33cf4366e5c55e516",
+    "references/method-sources.md": "ae6d6c3839ea8f8ed277f42f58eeef83fb7b3e4573e6bf5e23d8a55f142e843f",
     "references/modern-web-guidance.md": "bda8635c29238aee0aa435243758f64cfc5c3a3356b828411388013c1bda3331",
     "references/performance-evidence.md": "c917933e6e2af04638c70d317440010ed1900e3f2edbefddb6271a6371b43a19",
     "references/project-verification.md": "83c656364aad4c40e682c52dde1e248f6ff2f79753783972df286c3d90ec6641",
     "references/pstack-workflows.md": "90194a6f4f27edcd3e027ea6ff4af77e5785b9d042f08a6fc18cadb302ef0c99",
     "references/repeated-errors.md": "287562499dc07b1dd4a37adee7f4172db30be09f337064d6fa36296e81e8d113",
-    "references/skill-routing.md": "02bfaea30c6a356ce025778a8aaa0b15c8f935c7ba8ea0939158c97b79da023f"
+    "references/skill-routing.md": "0a0752470d5df419e03c9f7268087f38989697d49ad24b2a1cd0d9e3341f6732",
+    "references/test-execution-strategy.md": "f43915941253c07658192fa8fd5a2ef7924dbccbffc921f5510c5d1f78d5c9c5"
   },
   "schema": "gse.skill-install-manifest/v1",
   "skill": "generative-software-engineering",
-  "version": "2026-11-25"
+  "version": "2026-11-26"
 }

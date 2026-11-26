@@ -1,12 +1,12 @@
 {
   "files": {
-    "SKILL.md": "d35739aa027faae89e2229a9170a66cad22ca92a3d46e25804ab6afeb6852b3a",
+    "SKILL.md": "69671808c747f142c6566832f344f7edfb27cf45b22ad461e2ad7827aabee00c",
     "agents/openai.yaml": "fb4185a32dbe054a14845a4bb184e7afce6cde960ee686b46ef9d2cd728bada9",
     "evals/evals.json": "8622dfd568cf2074b2e897c1b810b1cc419248d7eac30d6372822b4240bd1de1",
     "references/agent-vs-modern-practice.md": "6bcc94a8948b3bc2e03d0bb2c54a106f4aa612ccef123d428bd892ef2c8dedfb",
-    "references/engineering-gate-checklist.md": "c042e75b943b1ce9fbd1ac80e7901628048993aa1678b96f3915aa6bd5f30145"
+    "references/engineering-gate-checklist.md": "ccc5a0b68125d69fdac2600a9db87820abf9a46e50bf0e8f8685f1a934a22f5c"
   },
   "schema": "gse.skill-install-manifest/v1",
   "skill": "professional-engineering-baseline",
-  "version": "2026-11-25"
+  "version": "2026-11-26"
 }

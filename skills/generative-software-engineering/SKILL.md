@@ -2,7 +2,7 @@
 name: generative-software-engineering
 description: 软件开发、修复、重构、旧项目／屎山代码全面清理、集成与交付的统一入口。所有实现类任务默认先应用 professional-engineering-baseline，再按当前问题调用独立维护的工程技能，选择相称验证并完成真实交付；完全只读的解释、分析、调研和未落地草稿按请求交付。
 metadata:
-  revision: "2026-11-25"
+  revision: "2026-11-26"
   short-description: 统一工程入口，按需串联独立技能并完成真实交付
 ---
 
@@ -28,6 +28,7 @@ GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维�
 
 - 统筹项目持续交付、经理巡办或交付后运营时，使用 **software-project-manager**：对照完整需求与功能/性能目标，协调原负责人和待决定事项，并主动核现役用户旅程。
 - 任何实现、修复、重构、集成、构建、安装、发布或工程治理任务，先应用 **professional-engineering-baseline**：核声明的集成基线与受控现场、定义结果和验证、按风险完成独立审查、控制制品来源与回滚，并按完成状态举证。
+- 测试套件较大、重复执行成本明显，或需要判断受影响测试、增量执行和结果复用时，读取[测试执行策略](references/test-execution-strategy.md)：按影响闭包选择测试，只复用输入相同的有效通过证据，并在发布／安装门保留干净全量验证。
 - 用户明确要求审查或精简多任务、多 Agent 并行开发治理，尤其是 lane、claim、worktree、合并顺序、分支回收与回滚规约时，使用 **parallel-delivery-review**：先识别真实共享写面和运行资源，优先复用现有 trunk、CI、merge queue、contract tests 与按层回滚。
 - 决定实现范围、增加机制或验证工作量时，使用 **avoid-overkill** 的工程模式；它也适用于检查 GSE 自身的流程改动。
 - 陈旧项目、屎山代码、全面精简或仓库瘦身，使用[旧项目全面清理](references/legacy-project-cleanup.md)，贯通需求、架构、代码、测试和部署；不是只格式化当前代码。
@@ -51,5 +52,6 @@ GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维�
 
 - 候选级独立代码审查：用户、项目要求或具体高风险缺口时读[独立审查](references/independent-review.md)。
 - 多入口验收与项目合同衔接：[项目验收地图](references/project-verification.md)；性能主张：[性能证据](references/performance-evidence.md)。
+- 测试选择、增量执行、结果复用和发布级全量边界：[测试执行策略](references/test-execution-strategy.md)。
 - 共享交接、增量集成与并行互等：[交付协调](references/delivery-coordination.md)及[解除协调停滞](https://github.com/felixlark/generative-software-engineering/blob/main/docs/COLLABORATION.md#resolve-coordination-stalls)。
 - 方法归属、历史来源与维护边界：[方法来源](references/method-sources.md)。

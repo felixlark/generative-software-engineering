@@ -1,6 +1,6 @@
 interface:
   display_name: "Generative Software Engineering"
   short_description: "统一工程入口，按当前问题串联独立技能，完成相称验证与真实交付"
-  default_prompt: "使用 $generative-software-engineering，先应用 $professional-engineering-baseline，再按当前问题读取独立维护的工程技能，用 avoid-overkill 校准投入，并以相称证据完成原始需求的真实交付。"
+  default_prompt: "使用 $generative-software-engineering，先应用 $professional-engineering-baseline，再按当前问题读取独立维护的工程技能；用 avoid-overkill 校准投入，用测试执行策略选择受影响检查并复用有效证据，最终以相称证据完成原始需求的真实交付。"
 policy:
   allow_implicit_invocation: true

@@ -36,6 +36,8 @@ Tests exist to catch meaningful regressions at a useful cost. Prove each busines
 
 Do not preserve a test merely because it once encoded an implementation detail. When a requirement changes, update or remove obsolete tests instead of adding compatibility behavior solely to satisfy them.
 
+For selection and execution frequency, follow the [test execution strategy](../skills/generative-software-engineering/references/test-execution-strategy.md). It owns affected-test closure, safe reuse of prior evidence, and the clean full-suite boundary at release; this document continues to own test value and the complexity budget.
+
 ## Retirement
 
 When a capability or workaround is retired, remove its entry points, implementation, configuration, documentation, and dedicated tests in the same change unless a current compatibility obligation requires a bounded reader or migration path.
