@@ -49,7 +49,7 @@ def write_manifest(skill_dir: Path, manifest: Path, skill: str) -> dict[str, Any
     value = {
         "schema": "gse.skill-install-manifest/v1",
         "skill": skill,
-        "version": "2026-11-25",
+        "version": "2026-11-26",
         "files": skill_files(skill_dir, manifest),
     }
     encoded = (json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode()

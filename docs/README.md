@@ -11,6 +11,7 @@ GSE uses a single-owner documentation rule: one rule has one home. Other documen
 | [`MINIMAL_SUFFICIENT_ENGINEERING.md`](MINIMAL_SUFFICIENT_ENGINEERING.md) | scope, complexity budget, test value, retirement |
 | [`HARNESS.md`](HARNESS.md) | runtime capabilities and the boundary between method and infrastructure |
 | [`professional-engineering-baseline`](../skills/professional-engineering-baseline/SKILL.md) | mandatory operating gates for implementation tasks: controlled work base, automated checks, risk-based independent review, artifact provenance, rollback, and workspace lifecycle |
+| [test execution strategy](../skills/generative-software-engineering/references/test-execution-strategy.md) | affected-test selection, safe result reuse, execution tiers, and release-wide verification boundary |
 
 Templates instantiate these rules without extending them. Examples illustrate them. Research notes can challenge them but are non-normative until promoted here.
 
