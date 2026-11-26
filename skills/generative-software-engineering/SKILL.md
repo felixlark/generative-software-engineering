@@ -34,6 +34,7 @@ GSE 维护结果责任、选路和交付衔接；专门方法由各自技能维�
 - 故障先用 **systematic-debugging**；需要理解调用链、历史理由或设计模块边界时，选对应 **pstack** 叶技能。
 - 拟定或实质修改可执行方案时，调用 **egm:egm-auto-review** 做独立审查；用户明确选择完整 EGM 流程时走对应原技能。
 - HTML、CSS 或浏览器端 JavaScript 工作，实施前调用 **modern-web-guidance:modern-web-guidance**；当前代码确需简化时调用 **code-simplifier**。
+- macOS、iOS 或其他 Apple 平台的设计、实现、评审、构建、签名或分发工作，实施前调用 **apple-platform-guidance**：先核实际部署目标与 Xcode／SDK，再用 Apple 官方文档和 Xcode MCP 取事实；SwiftUI／AppKit、HIG、沙盒、公证和 App Store 规则不以模型记忆替代。
 - 准备宣布完成时，按证据缺口调用 **verification-before-completion**；交付反复中断或提前返回时调用 **end-to-end-delivery**，已获准长周期接续沿 **long-running-delivery**。
 
 这些是场景入口。加载一个技能不要求把整张表执行一遍；同一候选仍有效的检查与审查证据直接复用。依赖的定位、缺失处理及输出衔接统一见路由表，GSE 不保存替代执行副本。

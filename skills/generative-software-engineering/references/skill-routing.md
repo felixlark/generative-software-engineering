@@ -52,6 +52,7 @@ EGM 是 Google 的 Elephant & Goldfish Model，使用保有上下文的负责人
 
 | 何时调用 | 当前技能名 | 交接回 GSE 的结果 |
 | --- | --- | --- |
+| macOS、iOS、iPadOS 或其他 Apple 平台的设计、实现、评审、调试、构建、签名、公证或分发 | `apple-platform-guidance`；按需调用 Apple 从 Xcode 导出的 `swiftui-specialist`、`xctrace`、`modernize-tests` 等叶技能和 Xcode MCP `DocumentationSearch` | 实际部署目标、Xcode／SDK、官方文档链接与访问时间、采用的公开 API、构建／测试／运行证据和未验项 |
 | HTML、CSS、浏览器端 JavaScript 或 Web 界面，在实施前 | `modern-web-guidance:modern-web-guidance` | 当前官方指南及受影响实现的采用情况 |
 | 本机 Chrome 已解压扩展更新、重载、换加载目录或回滚 | [`chrome-extension-update`](https://github.com/felixlark/generative-software-engineering/blob/main/skills/chrome-extension-update/SKILL.md) | OCU 实际加载路径、版本、ID、启用状态及受影响页面读回 |
 | 生成或实质修改 Codex 技能 | `skill-creator` | 作用域清楚的技能及适用的检查结果 |

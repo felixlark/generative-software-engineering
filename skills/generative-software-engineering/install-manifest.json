@@ -4,7 +4,7 @@
     "LICENSE.egm": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSE.modern-web-guidance": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "LICENSE.pstack": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
-    "SKILL.md": "f7c9fb1ced3e7b62df2e612ae651965c231d4329310e8888056fe511ecb8e7cc",
+    "SKILL.md": "dd48d3b41379ee004ea656c25bc0096c21a60355998ec19f39a97523c6620d3e",
     "agents/openai.yaml": "ac33c1e7e87b2c59b8c1d281d39a502ab263c30c0e78acb671f21d32f757f130",
     "references/change-design.md": "1e3025c05403a6e65baf44c875b84d5d6db74ef8e2d07b9a1ee2d672581dbf64",
     "references/code-simplification.md": "8a9d773e1456e1c7634006356d4aeee0ee7d36a7b6fb8e7f3ec076681c4d2aba",
@@ -19,7 +19,7 @@
     "references/project-verification.md": "83c656364aad4c40e682c52dde1e248f6ff2f79753783972df286c3d90ec6641",
     "references/pstack-workflows.md": "90194a6f4f27edcd3e027ea6ff4af77e5785b9d042f08a6fc18cadb302ef0c99",
     "references/repeated-errors.md": "287562499dc07b1dd4a37adee7f4172db30be09f337064d6fa36296e81e8d113",
-    "references/skill-routing.md": "93fa4a0b58b063797a74fe67c371447928c741d3bdfd9553d7f4760213168640"
+    "references/skill-routing.md": "02bfaea30c6a356ce025778a8aaa0b15c8f935c7ba8ea0939158c97b79da023f"
   },
   "schema": "gse.skill-install-manifest/v1",
   "skill": "generative-software-engineering",

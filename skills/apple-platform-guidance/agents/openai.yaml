@@ -1,0 +1,3 @@
+interface:
+  display_name: "Apple Platform Guidance"
+  short_description: "Apple docs and Xcode-native development guidance"
